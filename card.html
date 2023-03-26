@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SunWard</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <script src="https://yastatic.net/share2/share.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrap">
+            <a href="" class="header__logo">
+                <img src="img/logo.svg" alt="">
+            </a>
+            <ul class="header__menu">
+                <li><a href="/">Главная</a></li>
+                <li>
+                    <a href="/catalog.html">Каталог техники</a>
+                    <ul>
+                        <li><a href="">Техника для строительства фундаментов</a></li>
+                        <li><a href="">Буровые и дробильные устрановки</a></li>
+                        <li><a href="">Экскаваторы</a></li>
+                        <li><a href="">Краны</a></li>
+                        <li><a href="">Карьерные самосвалы</a></li>
+                        <li><a href="">Погрузчики с бортовым поворотом</a></li>
+                        <li><a href="">Фронтальные погрузчики</a></li>
+                        <li><a href="">Телескопические погрузчики</a></li>
+                        <li><a href="">Самоходно ножничные подъемники</a></li>
+                        <li><a href="">Бульдозеры</a></li>
+                    </ul>
+                </li>
+                <li><a href="/about.html">О компании</a></li>
+                <li><a href="/dillers.html">Наши дилеры</a></li>
+                <li><a href="/news.html">Новости</a></li>
+                <li><a href="/contacts.html">Контакты</a></li>
+            </ul>
+            <div class="header__right">
+                <div class="header__search">
+                    <a href="" class="header__search-top">
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22.6503 20.9494L16.9804 15.2561C18.4382 13.5829 19.237 11.4778 19.237 9.28624C19.237 4.16589 14.922 0 9.61849 0C4.31494 0 0 4.16589 0 9.28624C0 14.4066 4.31494 18.5725 9.61849 18.5725C11.6095 18.5725 13.5069 17.9927 15.1291 16.8921L20.842 22.6286C21.0808 22.868 21.402 23 21.7462 23C22.0719 23 22.381 22.8801 22.6156 22.6621C23.1141 22.199 23.13 21.431 22.6503 20.9494ZM9.61849 2.4225C13.5387 2.4225 16.7278 5.50149 16.7278 9.28624C16.7278 13.071 13.5387 16.15 9.61849 16.15C5.69833 16.15 2.50917 13.071 2.50917 9.28624C2.50917 5.50149 5.69833 2.4225 9.61849 2.4225Z"
+                                fill="#059A94" />
+                        </svg>
+                    </a>
+                    <form action="">
+                        <input type="text" placeholder="Введите поисковый запрос" required>
+                        <button><img src="img/search-arrow.png" alt=""></button>
+                    </form>
+                </div>
+                <a href="/contacts.html" class="header__world">
+                    <img src="img/world.svg" alt="">
+                </a>
+                <div class="header__cont">
+                    Служба поддержки
+                    <a href="tel:+7 (495) 280-73-78" class="header__phone">+7 (495) 280-73-78</a>
+                </div>
+            </div>
+            <a href="" class="header__burg">
+                <span></span>
+            </a>
+        </div>
+    </header>
+    <div class="menu">
+        <ul class="header__menu">
+            <li><a href="/">Главная</a></li>
+            <li>
+                <a href="/catalog.html">Каталог техники</a>
+                <ul>
+                    <li><a href="">Техника для строительства фундаментов</a></li>
+                    <li><a href="">Буровые и дробильные устрановки</a></li>
+                    <li><a href="">Экскаваторы</a></li>
+                    <li><a href="">Краны</a></li>
+                    <li><a href="">Карьерные самосвалы</a></li>
+                    <li><a href="">Погрузчики с бортовым поворотом</a></li>
+                    <li><a href="">Фронтальные погрузчики</a></li>
+                    <li><a href="">Телескопические погрузчики</a></li>
+                    <li><a href="">Самоходно ножничные подъемники</a></li>
+                    <li><a href="">Бульдозеры</a></li>
+                </ul>
+            </li>
+            <li><a href="/about.html">О компании</a></li>
+            <li><a href="/dillers.html">Наши дилеры</a></li>
+            <li><a href="/news.html">Новости</a></li>
+            <li><a href="/contacts.html">Контакты</a></li>
+        </ul>
+        <a href="/contacts.html" class="header__pred">
+            <img src="img/world.svg" alt="">
+            Представительства Sunward
+        </a>
+        <div class="header__mobsearch">
+            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M22.6503 20.9494L16.9804 15.2561C18.4382 13.5829 19.237 11.4778 19.237 9.28624C19.237 4.16589 14.922 0 9.61849 0C4.31494 0 0 4.16589 0 9.28624C0 14.4066 4.31494 18.5725 9.61849 18.5725C11.6095 18.5725 13.5069 17.9927 15.1291 16.8921L20.842 22.6286C21.0808 22.868 21.402 23 21.7462 23C22.0719 23 22.381 22.8801 22.6156 22.6621C23.1141 22.199 23.13 21.431 22.6503 20.9494ZM9.61849 2.4225C13.5387 2.4225 16.7278 5.50149 16.7278 9.28624C16.7278 13.071 13.5387 16.15 9.61849 16.15C5.69833 16.15 2.50917 13.071 2.50917 9.28624C2.50917 5.50149 5.69833 2.4225 9.61849 2.4225Z"
+                    fill="#059A94" />
+            </svg>
+            <form action="">
+                <input type="text" placeholder="Введите поисковый запрос" required>
+                <button><img src="img/search-arrow.png" alt=""></button>
+            </form>
+
+        </div>
+        <div class="header__cont">
+            Служба поддержки
+            <a href="tel:+7 (495) 280-73-78" class="header__phone">+7 (495) 280-73-78</a>
+        </div>
+    </div>
+    <section class="top">
+        <img src="img/contacts-bg.jpg" alt="">
+        <div class="container">
+            <div class="top__wrap">
+                <h1 class="top__title">SWE 08B</h1>
+                <ul class="top__bread">
+                    <li><a href="/">Sunward</a></li> /
+                    <li><a href="/">Каталог техники</a></li> /
+                    <li><a href="/">Экскаваторы</a></li> /
+                    <li><a href="/">Мини-экскаваторы</a></li> /
+                    <li>SWE 08B</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="card">
+        <div class="container">
+            <div class="card__wrap">
+                <div class="card__gal">
+                    <a data-fancybox href="img/card/card1.jpg" class="card__img">
+                        <img src="img/card/card1.jpg" alt="">
+                    </a>
+                    <div class="card__photos">
+                        <div class="card__photos-block active"><img src="img/card/card1.jpg" alt=""></div>
+                        <div class="card__photos-block"><img src="img/card/card2.jpg" alt=""></div>
+                        <div class="card__photos-block"><img src="img/card/card3.jpg" alt=""></div>
+                        <div class="card__photos-block"><img src="img/card/card4.jpg" alt=""></div>
+
+
+
+
+                    </div>
+                </div>
+                <div class="card__main">
+                    <h2 class="card__title">SWE 08B</h2>
+                    <p class="card__descr">Sunward SWE 08B — самый маленький экскаватор в нашей линейке. Этот
+                        мини-экскаватор идеально подходит для работы в труднодоступных местах. Несмотря на свой очень
+                        маленький размер, он отличается невероятно высокой удельной мощностью, очень хорошей
+                        надежностью, интуитивно понятным управлением и отличной защитой водителя (TOPS). Благодаря своим
+                        размерам его очень легко транспортировать на любую рабочую площадку, в помещении или на открытом
+                        воздухе.</p>
+                    <div class="card__line"><b>Рейтинг выбросов</b><span>ЕС Этап V</span></div>
+                    <div class="card__line"><b>Рабочий вес</b><span>1010 кг</span></div>
+                    <div class="card__line"><b>Выходная мощность</b><span>7,2 кВт</span></div>
+                    <div class="card__line"><b>Макс. глубина копания</b><span>1 731 мм</span></div>
+                    <div class="card__line"><b>Ширина</b><span>750 - 1 000 мм</span></div>
+                    <button href="" class="card__btn btn">
+                        Заинтересовались? Свяжитесь с ближайшим дилером
+                        <img src="img/arrow.svg" alt="">
+                    </button>
+                    <div class="article__share">
+                        Поделиться:
+                        <div class="ya-share2" data-curtain data-shape="round" data-color-scheme="whiteblack"
+                            data-services="vkontakte,odnoklassniki,telegram,whatsapp"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-mob">
+                <h2 class="card-mob__title">
+                    Sunward SWE 08B
+                </h2>
+                <a href="" class="tab">
+                    Технические характеристики
+                    <svg width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6.97422 5.45433L4.60089 7.89246L4.60089 0.617284C4.60089 0.595975 4.59984 0.574923 4.59777 0.554168C4.567 0.242899 4.31112 -1.61246e-07 4.00001 -1.74845e-07C3.66813 -1.89352e-07 3.39912 0.276365 3.39912 0.617284L3.39912 7.89246L1.02577 5.45433C0.791089 5.21329 0.410657 5.21329 0.175976 5.45433C-0.0586579 5.69542 -0.0586579 6.08623 0.175976 6.32732L3.57511 9.81922C3.80974 10.0603 4.19022 10.0603 4.42491 9.81922L7.82401 6.32732C7.82767 6.32357 7.83128 6.31976 7.83483 6.31591C7.8597 6.28905 7.88175 6.26046 7.901 6.23048C8.011 6.05932 8.02933 5.84431 7.956 5.65853C7.92667 5.58426 7.88267 5.51463 7.82401 5.45433C7.82034 5.45058 7.81664 5.44688 7.8129 5.44322C7.57749 5.21334 7.20522 5.21705 6.97422 5.45433Z"
+                            fill="#008D84" />
+                    </svg>
+                </a>
+                <div class="card-mob__block">
+                    <div class="card-mob__tabs">
+                        <a href="" class="active">Двигатель</a>
+                        <div class="card-info__harblock active">
+                            <div class="card-info__harline">
+                                <b>Платформа дорожный просвет</b><span>419 мм</span>
+                            </div>
+                            <div class="card-info__harline">
+                                <b>Радиус поворота</b><span>750 мм</span>
+                            </div>
+                            <div class="card-info__harline">
+                                <b>Длина в транспорте</b><span>2 640 мм</span>
+                            </div>
+                            <div class="card-info__harline">
+                                <b>Ширина в транспорте</b><span>750 мм</span>
+                            </div>
+                            <div class="card-info__harline">
+                                <b>Высота в транспорте</b><span>2 250 мм</span>
+                            </div>
+                        </div>
+                        <a href="">Шасси</a>
+                        <div class="card-info__harblock">
+                            <div class="card-info__harline">
+                                <b>Платформа дорожный просвет</b><span>419 мм</span>
+                            </div>
+                            <div class="card-info__harline">
+                                <b>Радиус поворота</b><span>750 мм</span>
+                            </div>
+                            <div class="card-info__harline">
+                                <b>Длина в транспорте</b><span>2 640 мм</span>
+                            </div>
+                            <div class="card-info__harline">
+                                <b>Ширина в транспорте</b><span>750 мм</span>
+                            </div>
+                            <div class="card-info__harline">
+                                <b>Высота в транспорте</b><span>2 250 мм</span>
+                            </div>
+                        </div>
+                        <a href="">Габариты</a>
+                        <div class="card-info__harblock">
+                            <div class="card-info__harline">
+                                <b>Платформа дорожный просвет</b><span>419 мм</span>
+                            </div>
+                            <div class="card-info__harline">
+                                <b>Радиус поворота</b><span>750 мм</span>
+                            </div>
+                            <div class="card-info__harline">
+                                <b>Длина в транспорте</b><span>2 640 мм</span>
+                            </div>
+                            <div class="card-info__harline">
+                                <b>Ширина в транспорте</b><span>750 мм</span>
+                            </div>
+                            <div class="card-info__harline">
+                                <b>Высота в транспорте</b><span>2 250 мм</span>
+                            </div>
+                        </div>
+                        <a href="">Емкость</a>
+                        <div class="card-info__harblock">
+                            <div class="card-info__harline">
+                                <b>Платформа дорожный просвет</b><span>419 мм</span>
+                            </div>
+                            <div class="card-info__harline">
+                                <b>Радиус поворота</b><span>750 мм</span>
+                            </div>
+                            <div class="card-info__harline">
+                                <b>Длина в транспорте</b><span>2 640 мм</span>
+                            </div>
+                            <div class="card-info__harline">
+                                <b>Ширина в транспорте</b><span>750 мм</span>
+                            </div>
+                            <div class="card-info__harline">
+                                <b>Высота в транспорте</b><span>2 250 мм</span>
+                            </div>
+                        </div>
+                        <a href="">Электрическая система</a>
+                        <div class="card-info__harblock">
+                            <div class="card-info__harline">
+                                <b>Платформа дорожный просвет</b><span>419 мм</span>
+                            </div>
+                            <div class="card-info__harline">
+                                <b>Радиус поворота</b><span>750 мм</span>
+                            </div>
+                            <div class="card-info__harline">
+                                <b>Длина в транспорте</b><span>2 640 мм</span>
+                            </div>
+                            <div class="card-info__harline">
+                                <b>Ширина в транспорте</b><span>750 мм</span>
+                            </div>
+                            <div class="card-info__harline">
+                                <b>Высота в транспорте</b><span>2 250 мм</span>
+                            </div>
+                        </div>
+                        <a href="">Отвал бульдозерный</a>
+                        <div class="card-info__harblock">
+                            <div class="card-info__harline">
+                                <b>Платформа дорожный просвет</b><span>419 мм</span>
+                            </div>
+                            <div class="card-info__harline">
+                                <b>Радиус поворота</b><span>750 мм</span>
+                            </div>
+                            <div class="card-info__harline">
+                                <b>Длина в транспорте</b><span>2 640 мм</span>
+                            </div>
+                            <div class="card-info__harline">
+                                <b>Ширина в транспорте</b><span>750 мм</span>
+                            </div>
+                            <div class="card-info__harline">
+                                <b>Высота в транспорте</b><span>2 250 мм</span>
+                            </div>
+                        </div>
+                        <a href="">Рабочие параметры</a>
+                        <div class="card-info__harblock">
+                            <div class="card-info__harline">
+                                <b>Платформа дорожный просвет</b><span>419 мм</span>
+                            </div>
+                            <div class="card-info__harline">
+                                <b>Радиус поворота</b><span>750 мм</span>
+                            </div>
+                            <div class="card-info__harline">
+                                <b>Длина в транспорте</b><span>2 640 мм</span>
+                            </div>
+                            <div class="card-info__harline">
+                                <b>Ширина в транспорте</b><span>750 мм</span>
+                            </div>
+                            <div class="card-info__harline">
+                                <b>Высота в транспорте</b><span>2 250 мм</span>
+                            </div>
+                        </div>
+                        <a href="">Гидравлическая система</a>
+                        <div class="card-info__harblock">
+                            <div class="card-info__harline">
+                                <b>Платформа дорожный просвет</b><span>419 мм</span>
+                            </div>
+                            <div class="card-info__harline">
+                                <b>Радиус поворота</b><span>750 мм</span>
+                            </div>
+                            <div class="card-info__harline">
+                                <b>Длина в транспорте</b><span>2 640 мм</span>
+                            </div>
+                            <div class="card-info__harline">
+                                <b>Ширина в транспорте</b><span>750 мм</span>
+                            </div>
+                            <div class="card-info__harline">
+                                <b>Высота в транспорте</b><span>2 250 мм</span>
+                            </div>
+                        </div>
+                        <a href="">Ход</a>
+                        <div class="card-info__harblock">
+                            <div class="card-info__harline">
+                                <b>Платформа дорожный просвет</b><span>419 мм</span>
+                            </div>
+                            <div class="card-info__harline">
+                                <b>Радиус поворота</b><span>750 мм</span>
+                            </div>
+                            <div class="card-info__harline">
+                                <b>Длина в транспорте</b><span>2 640 мм</span>
+                            </div>
+                            <div class="card-info__harline">
+                                <b>Ширина в транспорте</b><span>750 мм</span>
+                            </div>
+                            <div class="card-info__harline">
+                                <b>Высота в транспорте</b><span>2 250 мм</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="tab">
+                    Особенности и преимущества
+                    <svg width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6.97422 5.45433L4.60089 7.89246L4.60089 0.617284C4.60089 0.595975 4.59984 0.574923 4.59777 0.554168C4.567 0.242899 4.31112 -1.61246e-07 4.00001 -1.74845e-07C3.66813 -1.89352e-07 3.39912 0.276365 3.39912 0.617284L3.39912 7.89246L1.02577 5.45433C0.791089 5.21329 0.410657 5.21329 0.175976 5.45433C-0.0586579 5.69542 -0.0586579 6.08623 0.175976 6.32732L3.57511 9.81922C3.80974 10.0603 4.19022 10.0603 4.42491 9.81922L7.82401 6.32732C7.82767 6.32357 7.83128 6.31976 7.83483 6.31591C7.8597 6.28905 7.88175 6.26046 7.901 6.23048C8.011 6.05932 8.02933 5.84431 7.956 5.65853C7.92667 5.58426 7.88267 5.51463 7.82401 5.45433C7.82034 5.45058 7.81664 5.44688 7.8129 5.44322C7.57749 5.21334 7.20522 5.21705 6.97422 5.45433Z"
+                            fill="#008D84" />
+                    </svg>
+                </a>
+                <div class="card-mob__block">
+                    <div class="card-info__features">
+                        <div class="card-info__features-block">
+                            <div class="card-info__features-icon">
+                                <img src="img/card/feat1.png" alt="">
+                            </div>
+                            <div class="card-info__features-text">Двигатель Yanmar \ Kubota</div>
+                        </div>
+                        <div class="card-info__features-block">
+                            <div class="card-info__features-icon">
+                                <img src="img/card/feat2.png" alt="">
+                            </div>
+                            <div class="card-info__features-text">Выдвижное шасси</div>
+                        </div>
+                        <div class="card-info__features-block">
+                            <div class="card-info__features-icon">
+                                <img src="img/card/feat3.png" alt="">
+                            </div>
+                            <div class="card-info__features-text">Гидравлическая система NACHI / HC</div>
+                        </div>
+                        <div class="card-info__features-block">
+                            <div class="card-info__features-icon">
+                                <img src="img/card/feat4.png" alt="">
+                            </div>
+                            <div class="card-info__features-text">"Бесхвостый" поворот</div>
+                        </div>
+                        <div class="card-info__features-block">
+                            <div class="card-info__features-icon">
+                                <img src="img/card/feat5.png" alt="">
+                            </div>
+                            <div class="card-info__features-text">Электронное управление дроссельной
+                                заслонкой / автоматический холостой ход</div>
+                        </div>
+                        <div class="card-info__features-block">
+                            <div class="card-info__features-icon">
+                                <img src="img/card/feat6.png" alt="">
+                            </div>
+                            <div class="card-info__features-text">Сертификация FOPS / TOPS для кабины</div>
+                        </div>
+                        <div class="card-info__features-block">
+                            <div class="card-info__features-icon">
+                                <img src="img/card/feat7.png" alt="">
+                            </div>
+                            <div class="card-info__features-text">Стрела может отклоняться</div>
+                        </div>
+                        <div class="card-info__features-block">
+                            <div class="card-info__features-icon">
+                                <img src="img/card/feat8.png" alt="">
+                            </div>
+                            <div class="card-info__features-text">Сенсорный дисплей</div>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="tab">
+                    Видео
+                    <svg width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6.97422 5.45433L4.60089 7.89246L4.60089 0.617284C4.60089 0.595975 4.59984 0.574923 4.59777 0.554168C4.567 0.242899 4.31112 -1.61246e-07 4.00001 -1.74845e-07C3.66813 -1.89352e-07 3.39912 0.276365 3.39912 0.617284L3.39912 7.89246L1.02577 5.45433C0.791089 5.21329 0.410657 5.21329 0.175976 5.45433C-0.0586579 5.69542 -0.0586579 6.08623 0.175976 6.32732L3.57511 9.81922C3.80974 10.0603 4.19022 10.0603 4.42491 9.81922L7.82401 6.32732C7.82767 6.32357 7.83128 6.31976 7.83483 6.31591C7.8597 6.28905 7.88175 6.26046 7.901 6.23048C8.011 6.05932 8.02933 5.84431 7.956 5.65853C7.92667 5.58426 7.88267 5.51463 7.82401 5.45433C7.82034 5.45058 7.81664 5.44688 7.8129 5.44322C7.57749 5.21334 7.20522 5.21705 6.97422 5.45433Z"
+                            fill="#008D84" />
+                    </svg>
+                </a>
+                <div class="card-mob__block">
+                    <a data-fancybox href="" class="card-info__video">
+                        <img src="img/card/video.jpg" alt="">
+                        <div class="card-info__play">
+                            <img src="img/card/play.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <a href="" class="">
+                    Презентация
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16.1534 4.77974H8.89335C8.80001 4.77974 8.71334 4.73307 8.66667 4.6464L7.79334 3.43311C7.55335 3.00643 7.10002 2.73975 6.61336 2.73975H3.85335C2.83333 2.73975 2 3.57308 2 4.5931V15.4198C2 16.4331 2.82666 17.2598 3.84668 17.2598H16.1534C17.1733 17.2598 18 16.4331 18 15.4131V6.6331C18 5.61308 17.1733 4.77974 16.1534 4.77974ZM7.98669 9.46643C8.24666 9.19975 8.66667 9.19975 8.92668 9.46643L9.33333 9.87309V7.89311C9.33333 7.51974 9.63334 7.22644 10 7.22644C10.3733 7.22644 10.6667 7.51974 10.6667 7.89311V9.86642L11.0733 9.45976C11.3333 9.19975 11.7533 9.19975 12.0133 9.45976C12.28 9.71977 12.28 10.1398 12.02 10.3997C10.4155 11.9976 10.5089 11.9246 10.3733 12.0331C10.26 12.1064 10.1333 12.1464 10 12.1464C9.86666 12.1464 9.73336 12.1064 9.62667 12.0331C9.55835 11.9648 7.9191 10.3391 7.98669 10.4064C7.72669 10.1464 7.72669 9.72644 7.98669 9.46643ZM12.2667 14.8131H7.73336C7.36666 14.8131 7.06669 14.5197 7.06669 14.1464C7.06669 13.7797 7.36666 13.4797 7.73336 13.4797H12.2667C12.64 13.4797 12.9334 13.7797 12.9334 14.1464C12.9334 14.5197 12.64 14.8131 12.2667 14.8131Z"
+                            fill="#008D84" />
+                    </svg>
+                </a>
+            </div>
+            <div class="card-info">
+                <div class="card-info__tabs">
+                    <a href="" class="tab active">
+                        Технические характеристики
+                        <svg width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.97422 5.45433L4.60089 7.89246L4.60089 0.617284C4.60089 0.595975 4.59984 0.574923 4.59777 0.554168C4.567 0.242899 4.31112 -1.61246e-07 4.00001 -1.74845e-07C3.66813 -1.89352e-07 3.39912 0.276365 3.39912 0.617284L3.39912 7.89246L1.02577 5.45433C0.791089 5.21329 0.410657 5.21329 0.175976 5.45433C-0.0586579 5.69542 -0.0586579 6.08623 0.175976 6.32732L3.57511 9.81922C3.80974 10.0603 4.19022 10.0603 4.42491 9.81922L7.82401 6.32732C7.82767 6.32357 7.83128 6.31976 7.83483 6.31591C7.8597 6.28905 7.88175 6.26046 7.901 6.23048C8.011 6.05932 8.02933 5.84431 7.956 5.65853C7.92667 5.58426 7.88267 5.51463 7.82401 5.45433C7.82034 5.45058 7.81664 5.44688 7.8129 5.44322C7.57749 5.21334 7.20522 5.21705 6.97422 5.45433Z"
+                                fill="#008D84" />
+                        </svg>
+                    </a>
+                    <a href="" class="tab">
+                        Особенности и преимущества
+                        <svg width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.97422 5.45433L4.60089 7.89246L4.60089 0.617284C4.60089 0.595975 4.59984 0.574923 4.59777 0.554168C4.567 0.242899 4.31112 -1.61246e-07 4.00001 -1.74845e-07C3.66813 -1.89352e-07 3.39912 0.276365 3.39912 0.617284L3.39912 7.89246L1.02577 5.45433C0.791089 5.21329 0.410657 5.21329 0.175976 5.45433C-0.0586579 5.69542 -0.0586579 6.08623 0.175976 6.32732L3.57511 9.81922C3.80974 10.0603 4.19022 10.0603 4.42491 9.81922L7.82401 6.32732C7.82767 6.32357 7.83128 6.31976 7.83483 6.31591C7.8597 6.28905 7.88175 6.26046 7.901 6.23048C8.011 6.05932 8.02933 5.84431 7.956 5.65853C7.92667 5.58426 7.88267 5.51463 7.82401 5.45433C7.82034 5.45058 7.81664 5.44688 7.8129 5.44322C7.57749 5.21334 7.20522 5.21705 6.97422 5.45433Z"
+                                fill="#008D84" />
+                        </svg>
+                    </a>
+                    <a href="" class="tab">
+                        Видео
+                        <svg width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.97422 5.45433L4.60089 7.89246L4.60089 0.617284C4.60089 0.595975 4.59984 0.574923 4.59777 0.554168C4.567 0.242899 4.31112 -1.61246e-07 4.00001 -1.74845e-07C3.66813 -1.89352e-07 3.39912 0.276365 3.39912 0.617284L3.39912 7.89246L1.02577 5.45433C0.791089 5.21329 0.410657 5.21329 0.175976 5.45433C-0.0586579 5.69542 -0.0586579 6.08623 0.175976 6.32732L3.57511 9.81922C3.80974 10.0603 4.19022 10.0603 4.42491 9.81922L7.82401 6.32732C7.82767 6.32357 7.83128 6.31976 7.83483 6.31591C7.8597 6.28905 7.88175 6.26046 7.901 6.23048C8.011 6.05932 8.02933 5.84431 7.956 5.65853C7.92667 5.58426 7.88267 5.51463 7.82401 5.45433C7.82034 5.45058 7.81664 5.44688 7.8129 5.44322C7.57749 5.21334 7.20522 5.21705 6.97422 5.45433Z"
+                                fill="#008D84" />
+                        </svg>
+                    </a>
+                    <a href="" class="">
+                        Презентация
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.1534 4.77974H8.89335C8.80001 4.77974 8.71334 4.73307 8.66667 4.6464L7.79334 3.43311C7.55335 3.00643 7.10002 2.73975 6.61336 2.73975H3.85335C2.83333 2.73975 2 3.57308 2 4.5931V15.4198C2 16.4331 2.82666 17.2598 3.84668 17.2598H16.1534C17.1733 17.2598 18 16.4331 18 15.4131V6.6331C18 5.61308 17.1733 4.77974 16.1534 4.77974ZM7.98669 9.46643C8.24666 9.19975 8.66667 9.19975 8.92668 9.46643L9.33333 9.87309V7.89311C9.33333 7.51974 9.63334 7.22644 10 7.22644C10.3733 7.22644 10.6667 7.51974 10.6667 7.89311V9.86642L11.0733 9.45976C11.3333 9.19975 11.7533 9.19975 12.0133 9.45976C12.28 9.71977 12.28 10.1398 12.02 10.3997C10.4155 11.9976 10.5089 11.9246 10.3733 12.0331C10.26 12.1064 10.1333 12.1464 10 12.1464C9.86666 12.1464 9.73336 12.1064 9.62667 12.0331C9.55835 11.9648 7.9191 10.3391 7.98669 10.4064C7.72669 10.1464 7.72669 9.72644 7.98669 9.46643ZM12.2667 14.8131H7.73336C7.36666 14.8131 7.06669 14.5197 7.06669 14.1464C7.06669 13.7797 7.36666 13.4797 7.73336 13.4797H12.2667C12.64 13.4797 12.9334 13.7797 12.9334 14.1464C12.9334 14.5197 12.64 14.8131 12.2667 14.8131Z"
+                                fill="#008D84" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="card-info__cont">
+                    <div class="card-info__cont-block active">
+                        <div class="card-info__top">
+                            <div class="card-info__title">Sunward SWE 08B</div>
+                            <div class="card-info__nav"><span>Технические характеристики / </span><b>Двигатель</b></div>
+                        </div>
+                        <div class="card-info__har">
+                            <div class="card-info__hartabs">
+                                <a href="" class="active">Двигатель</a>
+                                <a href="">Шасси</a>
+                                <a href="">Габариты</a>
+                                <a href="">Емкость</a>
+                                <a href="">Электрическая система</a>
+                                <a href="">Отвал бульдозерный</a>
+                                <a href="">Рабочие параметры</a>
+                                <a href="">Гидравлическая система</a>
+                                <a href="">Ход</a>
+                            </div>
+                            <div class="card-info__harcont">
+                                <div class="card-info__harblock active">
+                                    <div class="card-info__harline">
+                                        <b>Платформа дорожный просвет</b><span>419 мм</span>
+                                    </div>
+                                    <div class="card-info__harline">
+                                        <b>Радиус поворота</b><span>750 мм</span>
+                                    </div>
+                                    <div class="card-info__harline">
+                                        <b>Длина в транспорте</b><span>2 640 мм</span>
+                                    </div>
+                                    <div class="card-info__harline">
+                                        <b>Ширина в транспорте</b><span>750 мм</span>
+                                    </div>
+                                    <div class="card-info__harline">
+                                        <b>Высота в транспорте</b><span>2 250 мм</span>
+                                    </div>
+                                </div>
+                                <div class="card-info__harblock">
+                                    <div class="card-info__harline">
+                                        <b>Платформа дорожный просвет</b><span>419 мм</span>
+                                    </div>
+                                    <div class="card-info__harline">
+                                        <b>Радиус поворота</b><span>750 мм</span>
+                                    </div>
+                                    <div class="card-info__harline">
+                                        <b>Длина в транспорте</b><span>2 640 мм</span>
+                                    </div>
+                                    <div class="card-info__harline">
+                                        <b>Ширина в транспорте</b><span>750 мм</span>
+                                    </div>
+                                    <div class="card-info__harline">
+                                        <b>Высота в транспорте</b><span>2 250 мм</span>
+                                    </div>
+                                </div>
+                                <div class="card-info__harblock">
+                                    <div class="card-info__harline">
+                                        <b>Платформа дорожный просвет</b><span>419 мм</span>
+                                    </div>
+                                    <div class="card-info__harline">
+                                        <b>Радиус поворота</b><span>750 мм</span>
+                                    </div>
+                                    <div class="card-info__harline">
+                                        <b>Длина в транспорте</b><span>2 640 мм</span>
+                                    </div>
+                                    <div class="card-info__harline">
+                                        <b>Ширина в транспорте</b><span>750 мм</span>
+                                    </div>
+                                    <div class="card-info__harline">
+                                        <b>Высота в транспорте</b><span>2 250 мм</span>
+                                    </div>
+                                </div>
+                                <div class="card-info__harblock">
+                                    <div class="card-info__harline">
+                                        <b>Платформа дорожный просвет</b><span>419 мм</span>
+                                    </div>
+                                    <div class="card-info__harline">
+                                        <b>Радиус поворота</b><span>750 мм</span>
+                                    </div>
+                                    <div class="card-info__harline">
+                                        <b>Длина в транспорте</b><span>2 640 мм</span>
+                                    </div>
+                                    <div class="card-info__harline">
+                                        <b>Ширина в транспорте</b><span>750 мм</span>
+                                    </div>
+                                    <div class="card-info__harline">
+                                        <b>Высота в транспорте</b><span>2 250 мм</span>
+                                    </div>
+                                </div>
+                                <div class="card-info__harblock">
+                                    <div class="card-info__harline">
+                                        <b>Платформа дорожный просвет</b><span>419 мм</span>
+                                    </div>
+                                    <div class="card-info__harline">
+                                        <b>Радиус поворота</b><span>750 мм</span>
+                                    </div>
+                                    <div class="card-info__harline">
+                                        <b>Длина в транспорте</b><span>2 640 мм</span>
+                                    </div>
+                                    <div class="card-info__harline">
+                                        <b>Ширина в транспорте</b><span>750 мм</span>
+                                    </div>
+                                    <div class="card-info__harline">
+                                        <b>Высота в транспорте</b><span>2 250 мм</span>
+                                    </div>
+                                </div>
+                                <div class="card-info__harblock">
+                                    <div class="card-info__harline">
+                                        <b>Платформа дорожный просвет</b><span>419 мм</span>
+                                    </div>
+                                    <div class="card-info__harline">
+                                        <b>Радиус поворота</b><span>750 мм</span>
+                                    </div>
+                                    <div class="card-info__harline">
+                                        <b>Длина в транспорте</b><span>2 640 мм</span>
+                                    </div>
+                                    <div class="card-info__harline">
+                                        <b>Ширина в транспорте</b><span>750 мм</span>
+                                    </div>
+                                    <div class="card-info__harline">
+                                        <b>Высота в транспорте</b><span>2 250 мм</span>
+                                    </div>
+                                </div>
+                                <div class="card-info__harblock">
+                                    <div class="card-info__harline">
+                                        <b>Платформа дорожный просвет</b><span>419 мм</span>
+                                    </div>
+                                    <div class="card-info__harline">
+                                        <b>Радиус поворота</b><span>750 мм</span>
+                                    </div>
+                                    <div class="card-info__harline">
+                                        <b>Длина в транспорте</b><span>2 640 мм</span>
+                                    </div>
+                                    <div class="card-info__harline">
+                                        <b>Ширина в транспорте</b><span>750 мм</span>
+                                    </div>
+                                    <div class="card-info__harline">
+                                        <b>Высота в транспорте</b><span>2 250 мм</span>
+                                    </div>
+                                </div>
+                                <div class="card-info__harblock">
+                                    <div class="card-info__harline">
+                                        <b>Платформа дорожный просвет</b><span>419 мм</span>
+                                    </div>
+                                    <div class="card-info__harline">
+                                        <b>Радиус поворота</b><span>750 мм</span>
+                                    </div>
+                                    <div class="card-info__harline">
+                                        <b>Длина в транспорте</b><span>2 640 мм</span>
+                                    </div>
+                                    <div class="card-info__harline">
+                                        <b>Ширина в транспорте</b><span>750 мм</span>
+                                    </div>
+                                    <div class="card-info__harline">
+                                        <b>Высота в транспорте</b><span>2 250 мм</span>
+                                    </div>
+                                </div>
+                                <div class="card-info__harblock">
+                                    <div class="card-info__harline">
+                                        <b>Платформа дорожный просвет</b><span>419 мм</span>
+                                    </div>
+                                    <div class="card-info__harline">
+                                        <b>Радиус поворота</b><span>750 мм</span>
+                                    </div>
+                                    <div class="card-info__harline">
+                                        <b>Длина в транспорте</b><span>2 640 мм</span>
+                                    </div>
+                                    <div class="card-info__harline">
+                                        <b>Ширина в транспорте</b><span>750 мм</span>
+                                    </div>
+                                    <div class="card-info__harline">
+                                        <b>Высота в транспорте</b><span>2 250 мм</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-info__cont-block">
+                        <div class="card-info__top">
+                            <div class="card-info__title">Sunward SWE 08B</div>
+                            <div class="card-info__nav"><span>Технические характеристики / </span><b>Особенности и
+                                    преимущества</b></div>
+                        </div>
+                        <div class="card-info__features">
+                            <div class="card-info__features-block">
+                                <div class="card-info__features-icon">
+                                    <img src="img/card/feat1.png" alt="">
+                                </div>
+                                <div class="card-info__features-text">Двигатель Yanmar \ Kubota</div>
+                            </div>
+                            <div class="card-info__features-block">
+                                <div class="card-info__features-icon">
+                                    <img src="img/card/feat2.png" alt="">
+                                </div>
+                                <div class="card-info__features-text">Выдвижное шасси</div>
+                            </div>
+                            <div class="card-info__features-block">
+                                <div class="card-info__features-icon">
+                                    <img src="img/card/feat3.png" alt="">
+                                </div>
+                                <div class="card-info__features-text">Гидравлическая система NACHI / HC</div>
+                            </div>
+                            <div class="card-info__features-block">
+                                <div class="card-info__features-icon">
+                                    <img src="img/card/feat4.png" alt="">
+                                </div>
+                                <div class="card-info__features-text">"Бесхвостый" поворот</div>
+                            </div>
+                            <div class="card-info__features-block">
+                                <div class="card-info__features-icon">
+                                    <img src="img/card/feat5.png" alt="">
+                                </div>
+                                <div class="card-info__features-text">Электронное управление дроссельной
+                                    заслонкой / автоматический холостой ход</div>
+                            </div>
+                            <div class="card-info__features-block">
+                                <div class="card-info__features-icon">
+                                    <img src="img/card/feat6.png" alt="">
+                                </div>
+                                <div class="card-info__features-text">Сертификация FOPS / TOPS для кабины</div>
+                            </div>
+                            <div class="card-info__features-block">
+                                <div class="card-info__features-icon">
+                                    <img src="img/card/feat7.png" alt="">
+                                </div>
+                                <div class="card-info__features-text">Стрела может отклоняться</div>
+                            </div>
+                            <div class="card-info__features-block">
+                                <div class="card-info__features-icon">
+                                    <img src="img/card/feat8.png" alt="">
+                                </div>
+                                <div class="card-info__features-text">Сенсорный дисплей</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-info__cont-block">
+                        <div class="card-info__top">
+                            <div class="card-info__title">Sunward SWE 08B</div>
+                            <div class="card-info__nav"><span>Технические характеристики / </span><b>Видео</b></div>
+                        </div>
+                        <a data-fancybox href="" class="card-info__video">
+                            <img src="img/card/video.jpg" alt="">
+                            <div class="card-info__play">
+                                <img src="img/card/play.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-last">
+                <h2 class="card-last__title">Напишите нам</h2>
+                <p class="card-last__descr">Здесь вы можете оставить свои комментарии и предложения, мы своевременно на
+                    них ответим</p>
+                <form action="" class="card-last__form">
+                    <div class="card-last__left">
+                        <input type="text" placeholder="Ваше имя*" required>
+                        <input type="tel" placeholder="Ваш телефон*" required>
+                        <div class="select ">
+                            <select name="" id="" onclick="selectChange(this);" onblur="selectBlur(this);">
+                                <option value="0">Интересующая техника*</option>
+                                <option value="1">2</option>
+                                <option value="2">3</option>
+                            </select>
+                        </div>
+                        <input type="text" placeholder="Из какого Вы города?*" required>
+                    </div>
+                    <div class="card-last__right"><textarea name="" id="" cols="30" rows="10"
+                            placeholder="Введите сообщение*"></textarea></div>
+                    <div class="card-last__bot">
+                        <label class="check">
+                            <input type="checkbox" name="" id="" checked required>
+                            <span></span>
+                            <p>Даю согласие на обработку персональных данных</p>
+                        </label>
+                        <button class="btn">
+                            Отправить заявку
+                            <img src="img/arrow.svg" alt="">
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-mob">
+            <div class="container">
+                <a href="/" class="footer__logo">
+                    <img src="img/footer-logo2.svg" alt="">
+                </a>
+                <div class="footer__title">Контакты</div>
+                <div class="footer__small">
+                    <div class="footer__pwrap">
+                        <div class="footer__sp">Служба поддержки</div>
+                        <a href="tel:+7 (495) 280-73-78" class="footer__phone">
+                            +7 (495) 280-73-78</a>
+                    </div>
+                    <div class="footer__soc">
+                        <a href="">
+                            <img src="img/footer-soc.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="img/footer-soc.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="img/footer-soc.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <ul class="footer__menu">
+                    <li>
+                        <a href="">Каталог техники</a>
+                        <ul>
+                            <li><a href="">Техника для строительства фундаментов</a></li>
+                            <li><a href=""> Буровые и дробильные устрановки</a></li>
+                            <li><a href="">Экскаваторы</a></li>
+                            <li><a href="">Краны</a></li>
+                            <li><a href="">Карьерные самосвалы</a></li>
+                            <li><a href="">Погрузчики с бортовым поворотом</a></li>
+                            <li><a href="">Фронтальные погрузчики</a></li>
+                            <li><a href="">Телескопические погрузчики</a></li>
+                            <li><a href="">Самоходно ножничные подъемники</a></li>
+                            <li><a href="">Бульдозеры</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">О компании</a>
+                        <ul>
+                            <li><a href="">Наши дилеры</a></li>
+                            <li><a href="">Новости</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="footer__links">
+                    <a href="">Сведения об обработке персональных данных</a>
+                    <a href="">Политика конфиденциальности</a>
+                </div>
+                <div class="footer__subtitle">САНВАРД РУС ООО</div>
+                <p class="footer__text">Комплектация и внешний вид продукции, перечисленной в рамках меню сайта,
+                    представлена
+                    на основе реального оборудования. В целях постоянной работы по техническому совершенствованию
+                    продукции, удовлетворяющей спрос покупателей и соответствующие законные требования государства,
+                    Sunward Intelligent Equipment Group имеет право вносить изменения
+                    в спецификацию вышеуказанной продукции
+                    без отдельного уведомления.</p>
+                <a href="https://www.versality.ru/" class="footer__dev" target="_blank">
+                    Сайт разработан и поддерживается
+                    <img src="img/hero-logo.svg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer__wrap">
+                <div class="footer__main">
+                    <a href="/" class="footer__logo">
+                        <img src="img/footer-logo.svg" alt="">
+                    </a>
+                    <div class="footer__subtitle">САНВАРД РУС ООО</div>
+                    <p class="footer__text">Комплектация и внешний вид продукции, перечисленной в рамках меню сайта,
+                        представлена
+                        на основе реального оборудования. В целях постоянной работы по техническому совершенствованию
+                        продукции, удовлетворяющей спрос покупателей и соответствующие законные требования государства,
+                        Sunward Intelligent Equipment Group имеет право вносить изменения
+                        в спецификацию вышеуказанной продукции
+                        без отдельного уведомления.</p>
+                </div>
+                <ul class="footer__menu">
+                    <li>
+                        <a href="">Каталог техники</a>
+                        <ul>
+                            <li><a href="">Техника для строительства фундаментов</a></li>
+                            <li><a href=""> Буровые и дробильные устрановки</a></li>
+                            <li><a href="">Экскаваторы</a></li>
+                            <li><a href="">Краны</a></li>
+                            <li><a href="">Карьерные самосвалы</a></li>
+                            <li><a href="">Погрузчики с бортовым поворотом</a></li>
+                            <li><a href="">Фронтальные погрузчики</a></li>
+                            <li><a href="">Телескопические погрузчики</a></li>
+                            <li><a href="">Самоходно ножничные подъемники</a></li>
+                            <li><a href="">Бульдозеры</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">О компании</a>
+                        <ul>
+                            <li><a href="">Наши дилеры</a></li>
+                            <li><a href="">Новости</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="footer__contacts">
+                    <div class="footer__title">Контакты</div>
+                    <div class="footer__sp">Служба поддержки</div>
+                    <a href="tel:+7 (495) 280-73-78" class="footer__phone">
+                        +7 (495) 280-73-78</a>
+                    <div class="footer__links">
+                        <a href="">Сведения об обработке персональных данных</a>
+                        <a href="">Политика конфиденциальности</a>
+                    </div>
+                    <div class="footer__soc">
+                        <a href="">
+                            <img src="img/footer-soc.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="img/footer-soc.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="img/footer-soc.png" alt="">
+                        </a>
+                    </div>
+                    <a href="https://www.versality.ru/" class="footer__dev" target="_blank">
+                        Сайт разработан и поддерживается
+                        <img src="img/hero-logo.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+        integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

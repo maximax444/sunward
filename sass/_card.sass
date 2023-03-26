@@ -1,0 +1,477 @@
+.card
+    padding: 102px 0
+    &__wrap
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 75px
+    &__gal
+        width: 600px
+    &__img
+        height: 500px
+        width: 100%
+        margin-bottom: 40px
+        background: #F8F8F8
+        border-radius: 4px
+        overflow: hidden
+        display: block
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+    &__photos
+        display: flex
+        display: grid
+        grid-template-columns: repeat(4,1fr)
+        grid-gap: 19px
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+        &-block
+            border: 1px solid #fff
+            border-radius: 4px
+            background: #F8F8F8
+            overflow: hidden
+            display: flex
+            cursor: pointer
+            height: 140px
+        .active
+            border: 1px solid #F4A648
+            border-radius: 4px
+            background: #F8F8F8
+            overflow: hidden
+    &__main
+        width: 605px
+    &__title
+        margin: 0
+        font-weight: 700
+        font-size: 46px
+        line-height: 54px
+        margin-bottom: 17px
+    &__descr
+        margin-top: 0
+        margin-bottom: 35px
+        font-size: 18px
+        line-height: 24px
+        color: #000000
+    &__line
+        margin-bottom: 22px
+        display: flex
+        justify-content: space-between
+        b
+            font-weight: 600
+            font-size: 18px
+            line-height: 22px
+            color: #000000
+        span
+            font-weight: 600
+            font-size: 18px
+            line-height: 22px
+            text-align: right
+            color: #008D84
+    &__btn
+        margin-top: 40px
+        width: 100%
+        margin-bottom: 30px
+    &-last
+        &__title
+            margin: 0
+            margin-bottom: 22px
+            font-weight: 700
+            font-size: 46px
+            line-height: 54px
+        &__descr
+            margin-top: 0
+            font-size: 18px
+            line-height: 24px
+            margin-bottom: 42px
+        &__form
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            grid-gap: 32px 0
+            input
+                background: #F8F8F8
+                border: 1px solid #ECECEC
+                border-radius: 4px
+                padding: 20px 27px
+                font-size: 16px
+                line-height: 19px
+                color: #008D84
+                font-weight: 400
+                width: 323px
+                max-width: 49%
+            ::placeholder
+                color: #008D84
+            textarea
+                width: 100%
+                max-width: 100%
+                background: #F8F8F8
+                border: 1px solid #ECECEC
+                border-radius: 4px
+                height: 135px
+                padding: 21px 27px
+                font-style: normal
+                font-size: 16px
+                line-height: 19px
+                color: #008D84
+            .select
+                width: 323px
+                max-width: 49%
+        &__left
+            width: 650px
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            grid-gap: 13px 0
+            align-items: flex-start
+        &__right
+            width: 650px
+        &__bot
+            width: 100%
+            button
+                width: 100%
+                margin-top: 33px
+    &-info
+        margin-bottom: 70px
+        &__tabs
+            display: flex
+            justify-content: space-between
+            margin-bottom: 24px
+            a
+                width: 24%
+                padding: 19px
+                display: flex
+                align-items: center
+                justify-content: center
+                grid-gap: 6px
+                font-weight: 600
+                font-size: 18px
+                line-height: 22px
+                text-decoration: none
+                color: #000000
+                border: 1px solid #008D84
+                border-radius: 4px
+                path, svg
+                    transition: all 0.3s
+                svg
+                    margin-bottom: -2px
+                &.active
+                    background: #008D84
+                    color: #fff
+                    svg
+                        transform: rotate(180deg)
+                    path
+                        fill: #fff
+                &:hover
+                    background: #008D84
+                    color: #fff
+                    path
+                        fill: #fff
+        &__cont
+            &-block
+                display: none
+                padding: 45px 60px
+                background: #F8F8F8
+                border-radius: 4px
+                &.active
+                    display: block
+        &__top
+            display: flex
+            justify-content: space-between
+            align-items: flex-end
+            margin-bottom: 30px
+        &__title
+            font-weight: 700
+            font-size: 46px
+            line-height: 54px
+            width: 50%
+            padding-right: 20px
+            color: #000000
+        &__nav
+            padding-bottom: 10px
+            font-weight: 400
+            font-size: 18px
+            line-height: 22px
+            color: #008D84
+            width: 45%
+            b
+                color: #F4A648
+        &__video
+            height: 675px
+            width: 100%
+            position: relative
+            display: block
+            &>img
+                width: 100%
+                height: 100%
+                object-fit: cover
+        &__play
+            width: 70px
+            height: 70px
+            position: absolute
+            top: 50%
+            left: 50%
+            margin-top: -35px
+            margin-left: -35px
+            img
+                width: 100%
+        &__features
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            grid-gap: 34px 0
+            &-block
+                display: flex
+                align-items: center
+                grid-gap: 34px
+                width: 45%
+            &-icon
+                width: 72px
+                img
+                    width: 100%
+            &-text
+                width: calc(100% - 106px)
+                font-weight: 400
+                font-size: 18px
+                line-height: 22px
+                color: #000000
+                max-width: 330px
+        &__har
+            display: flex
+            justify-content: space-between
+            &tabs
+                width: 45%
+                display: flex
+                grid-gap: 30px 0
+                flex-wrap: wrap
+                a
+                    width: 50%
+                    padding-right: 15px
+                    font-weight: 700
+                    font-size: 18px
+                    line-height: 22px
+                    color: #008D84
+                    text-decoration: none
+                    &.active, &:hover
+                        color: #F4A648
+            &cont
+                width: 45%
+            &block
+                display: none
+                &.active
+                    display: block
+            &line
+                display: flex
+                justify-content: space-between
+                margin-bottom: 22px
+                b
+                    font-weight: 600
+                    font-size: 18px
+                    line-height: 22px
+                    color: #000000
+                span
+                    font-weight: 600
+                    font-size: 18px
+                    line-height: 22px
+                    text-align: right
+                    color: #008D84
+    &-mob
+        display: none
+@media(max-width: 1349px)
+    .card
+        &__wrap
+            grid-gap: 30px
+        &__photos
+            grid-gap: 10px
+        &__btn
+            padding: 19px
+        &-info
+            &__tabs
+                a
+                    font-size: 16px
+        &-last
+            &__left, &__right
+                width: 49%
+@media(max-width: 1199px)
+    .card
+        &__photos
+            &-block
+                height: 100px
+        &__img
+            height: 400px
+        &-last
+            &__left, &__right
+                width: 100%
+        &-info__har
+            &tabs
+                grid-gap: 20px 0
+                a
+                    font-size: 16px
+                    line-height: 20px
+        &-info
+            &__video
+                height: 500px
+@media(max-width: 991px)
+    .card
+        &__wrap
+            display: block
+        &__photos
+            &-block
+                height: 140px
+        &__img
+            height: 400px
+        &__gal
+            margin-bottom: 50px
+            max-width: 100%
+        &__main
+            width: 100%
+        &-info
+            &__top
+                display: block
+            &__title, &__nav
+                display: block
+                width: 100%
+            &__har
+                &tabs
+                    a
+                        width: 100%
+            &__features-block
+                width: 100%
+@media(max-width: 767px)
+    .card
+        &-info
+            display: none
+            &__video
+                height: 300px
+            &__features
+                grid-gap: 15px 0
+            &__harline
+                margin-bottom: 17px
+                b
+                    font-weight: 400
+                    font-size: 14px
+                    line-height: 17px
+                span
+                    font-weight: 400
+                    font-size: 14px
+                    line-height: 17px
+        &-mob
+            display: block
+            margin-bottom: 55px
+            &__title
+                margin-top: 0
+                margin-bottom: 30px
+                font-size: 32px
+                line-height: 36px
+            &__block
+                display: none
+                background: #F8F8F8
+                border-radius: 4px
+                padding: 22px
+                margin-bottom: 15px
+                &.active
+                    display: block
+            & > a
+                margin-bottom: 15px
+                padding: 13px 23px
+                display: flex
+                align-items: center
+                justify-content: space-between
+                grid-gap: 6px
+                font-weight: 600
+                font-size: 14px
+                line-height: 17px
+                text-decoration: none
+                color: #000000
+                border: 1px solid #008D84
+                border-radius: 4px
+                path, svg
+                    transition: all 0.3s
+                svg
+                    margin-bottom: -2px
+                &.active
+                    background: #008D84
+                    color: #fff
+                    svg
+                        transform: rotate(180deg)
+                    path
+                        fill: #fff
+            &__tabs
+                a
+                    font-weight: 700
+                    font-size: 16px
+                    line-height: 20px
+                    color: #008D84
+                    padding: 9px 0
+                    display: block
+                    border-top: 1px solid #E0E0E0
+                    text-decoration: none
+                    &.active
+                        color: #F4A648
+                    &:first-child
+                        border-top: 0
+@media(max-width: 575px)
+    .card
+        padding-top: 40px
+        padding-bottom: 65px
+        &__img
+            height: 280px
+            margin-bottom: 12px
+        &__photos
+            &-block
+                height: 70px
+        &__title
+            font-size: 32px
+            line-height: 36px
+            margin-bottom: 13px
+        &__descr
+            font-size: 16px
+            line-height: 20px
+            margin-bottom: 34px
+        &__line
+            margin-bottom: 17px
+            b, span
+                font-size: 16px
+                line-height: 17px
+        &-last
+            &__form
+                grid-gap: 12px
+                input, .select
+                    width: 100%
+                    max-width: 100%
+                input
+                    padding: 14px 23px
+                    font-size: 14px
+                    line-height: 17px
+                textarea
+                    padding: 18px 23px
+                    font-size: 14px
+                    line-height: 17px
+            .check
+                padding-top: 5px
+            &__title
+                margin-bottom: 13px
+                font-size: 32px
+                line-height: 36px
+            &__descr
+                font-size: 16px
+                line-height: 20px
+                margin-bottom: 30px
+        &-info
+            &__features
+                &-icon
+                    width: 40px
+                    img
+                        width: 100%
+                &-text
+                    font-size: 14px
+                    line-height: 17px
+            &__video
+                height: 200px
+            &__play
+                width: 50px
+                height: 50px
+                margin-left: -25px
+                margin-top: -25px
