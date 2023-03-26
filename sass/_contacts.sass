@@ -1,0 +1,165 @@
+.contacts
+    padding-top: 85px
+    padding-bottom: 90px
+    &__wrap
+        display: flex
+    &__main
+        width: 50%
+        padding-right: 145px
+    &__right
+        width: 50%
+    &__title
+        margin: 0
+        margin-bottom: 22px
+        font-weight: 700
+        font-size: 46px
+        line-height: 54px
+        color: #000000
+    &__text
+        margin: 0
+        font-size: 18px
+        line-height: 24px
+        margin-bottom: 33px
+        max-width: 515px
+    &__form
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        grid-gap: 13px 0
+        input
+            background: #F8F8F8
+            border: 1px solid #ECECEC
+            border-radius: 4px
+            padding: 20px 27px
+            font-size: 16px
+            line-height: 19px
+            color: #008D84
+            font-weight: 400
+            width: 323px
+            max-width: 49%
+        ::placeholder
+            color: #008D84
+        textarea
+            width: 100%
+            max-width: 100%
+            background: #F8F8F8
+            border: 1px solid #ECECEC
+            border-radius: 4px
+            height: 250px
+            padding: 21px 27px
+            font-style: normal
+            font-size: 16px
+            line-height: 19px
+            color: #008D84
+        .select
+            width: 323px
+            max-width: 49%
+    &__subtitle
+        font-weight: 700
+        font-size: 23px
+        line-height: 28px
+        margin-bottom: 39px
+    &__block
+        display: flex
+        align-items: flex-start
+        text-decoration: none
+        margin-bottom: 25px
+        max-width: 432px
+        color: #000000
+        &:hover
+            color: #F39A2E
+    &__icon
+        width: 24px
+        height: 26px
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-right: 22px
+    &__link
+        width: calc(100% - 46px)
+        font-weight: 400
+        font-size: 18px
+        line-height: 24px
+    &__bottom
+        display: flex
+        align-items: center
+        justify-content: space-between
+        width: 100%
+        padding-top: 17px
+    &__map
+        height: 685px
+        .gmnoprint
+            display: none
+@media (max-width: 1349px)
+    .contacts
+        &__main
+            padding-right: 50px
+            width: 45%
+        &__right
+            width: 55%
+        &__form
+            .check
+                width: 320px
+@media(max-width: 1199px)
+    .contacts
+        &__wrap
+            display: block
+        &__main, &__right
+            width: 650px
+            max-width: 100%
+        &__right
+            padding-top: 50px
+        &__bottom
+            display: block
+            button
+                margin-top: 20px
+@media(max-width: 575px)
+    .contacts
+        padding-top: 40px
+        padding-bottom: 90px
+        &__map
+            height: 545px
+        &__title
+            margin-bottom: 13px
+            font-size: 32px
+            line-height: 36px
+        &__text
+            margin-bottom: 30px
+            font-size: 16px
+            line-height: 20px
+        &__subtitle
+            font-size: 20px
+            line-height: 24px
+            margin: 0
+            margin-bottom: 22px
+        &__icon
+            margin-top: -3px
+        &__link
+            font-size: 16px
+            line-height: 20px
+            br
+                display: none
+        &__block
+            margin-bottom: 24px
+        &__right
+            padding-top: 36px
+        &__main
+            padding-right: 0
+        &__form
+            grid-gap: 12px
+            .check
+                width: 100%
+            input
+                width: 100%
+                max-width: 100%
+                padding: 14px 23px
+                font-size: 14px
+                line-height: 17px
+            .select
+                width: 100%
+                max-width: 100%
+            textarea
+                height: 220px
+                padding: 18px 23px
+                font-size: 14px
+                line-height: 17px
