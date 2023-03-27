@@ -73,6 +73,284 @@
         &:hover
             .catalog__card-name
                 color: #F39A2F
+.cat
+    padding-top: 100px
+    &-special
+        margin-bottom: 105px
+        display: flex
+        grid-gap: 30px
+        justify-content: space-between
+        &__text
+            width: 610px
+            display: flex
+            align-items: flex-start
+            flex-direction: column
+            h2
+                margin-top: 0
+                font-size: 46px
+                line-height: 54px
+                margin-bottom: 21px
+            p
+                margin-top: 0
+                margin-bottom: 24px
+                font-size: 18px
+                line-height: 24px
+            h3
+                font-weight: 700
+                font-size: 23px
+                line-height: 54px
+                margin-bottom: 7px
+                margin-top: 0
+        &__btn
+            margin-top: 37px
+            text-decoration: none
+        &__img
+            width: 650px
+            height: 700px
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+        &__mob
+            display: none
+    &-stable
+        margin-bottom: 70px
+        &__wrap
+            display: flex
+            justify-content: space-between
+            grid-gap: 30px
+            margin-bottom: 42px
+            align-items: center
+        &__img
+            width: 650px
+            height: 440px
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+        &__text
+            width: 610px
+            h2
+                margin-top: 0
+                font-size: 46px
+                line-height: 54px
+                margin-bottom: 21px
+            p
+                margin-top: 0
+                margin-bottom: 21px
+                font-size: 18px
+                line-height: 24px
+        &__bot
+            display: flex
+            justify-content: space-between
+        &__block
+            width: 49%
+            padding: 35px 32px
+            background: #F8F8F8
+            border-radius: 4px
+            b
+                font-size: 23px
+                line-height: 28px
+            p
+                margin-bottom: 0
+                margin-top: 21px
+                font-size: 18px
+                line-height: 24px
+    &-last
+        background: #F8F8F8
+        margin-bottom: 180px
+        position: relative
+        padding: 60px 0
+        &__img
+            position: absolute
+            top: 0
+            right: 0
+            height: 100%
+            background: url('../img/cat/last-bg.png') top right no-repeat
+            background-size: contain
+            padding-top: 30px
+            padding-right: 90px
+            display: flex
+            align-items: flex-start
+            justify-content: flex-end
+            img
+                max-width: 45vw
+        &__top
+            margin-bottom: 21px
+            font-weight: 600
+            font-size: 18px
+            line-height: 24px
+        &__title
+            margin-top: 0
+            margin-bottom: 20px
+            max-width: 555px
+            font-weight: 700
+            font-size: 46px
+            line-height: 54px
+        &__descr
+            max-width: 610px
+            margin-top: 0
+            margin-bottom: 42px
+            font-size: 18px
+            line-height: 24px
+        &__wrap
+            display: flex
+            grid-gap: 12px
+        &__block
+            padding: 29px 20px
+            background: #FFFFFF
+            border: 1px solid #ECECEC
+            border-radius: 4px
+            width: 195px
+            font-size: 15px
+            line-height: 22px
+            span
+                font-weight: 700
+                font-size: 44px
+                line-height: 53px
+                color: #008D84
+                display: block
+    &-info__title
+        margin-top: 0
+        margin-bottom: 50px
+        font-weight: 700
+        font-size: 46px
+        line-height: 54px
+    &__all
+        display: flex
+        justify-content: space-between
+        margin-bottom: 120px
+        grid-gap: 25px
+    &__aside
+        width: 305px
+    &__wrap
+        width: 950px
+        display: grid
+        grid-template-columns: repeat(3,1fr)
+        grid-gap: 14px
+    &__block
+        padding: 24px
+        background: #F8F8F8
+        border: 1px solid #ECECEC
+        border-radius: 4px
+    &__link
+        text-decoration: none
+        width: 100%
+        margin-top: 21px
+    &__img
+        height: 250px
+        margin-bottom: 30px
+        display: flex
+        justify-content: center
+        align-items: center
+        img
+            max-width: 100%
+            max-height: 100%
+    &__name
+        display: block
+        font-weight: 700
+        font-size: 23px
+        line-height: 28px
+        color: #000000
+        text-decoration: none
+    &__line
+        margin-top: 14px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        b
+            font-weight: 400
+            font-size: 14px
+            line-height: 14px
+        span
+            font-weight: 400
+            font-size: 12px
+            line-height: 14px
+            color: #008D84
+    &__cat
+        font-weight: 700
+        font-size: 23px
+        line-height: 28px
+        color: #000000
+        margin-bottom: 20px
+    &__aside
+        ul
+            margin: 0
+            padding: 0
+            list-style-type: none
+        &>ul>li
+            &>a
+                padding-left: 20px
+                border-left: 2px solid transparent
+                font-weight: 600
+                font-size: 18px
+                line-height: 20px
+                margin-bottom: 20px
+                display: block
+                color: #000000
+                text-decoration: none
+                &:hover
+                    border-left: 2px solid #F39A2F
+                    color: #F39A2F
+            ul
+                display: none
+                margin-bottom: 20px
+                label
+                    padding-left: 40px
+                    font-size: 16px
+                    line-height: 17px
+                    margin-bottom: 17px
+                    display: flex
+                    justify-content: space-between
+                input
+                    width: 0
+                    height: 0
+                    overflow: hidden
+                    margin: 0
+                    padding: 0
+                    opacity: 0
+                    visibility: hidden
+                    & + span
+                        background: #F8F8F8
+                        border: 1px solid #ECECEC
+                        border-radius: 2px
+                        display: block
+                        width: 18px
+                        height: 18px
+                        position: relative
+                    &:checked + span
+                        &::after
+                            content: ""
+                            width: 8px
+                            height: 8px
+                            position: absolute
+                            top: 4px
+                            left: 4px
+                            background-color: #F39A2F
+            &.active
+                a
+                    border-left: 2px solid #F39A2F
+                    color: #F39A2F
+                ul
+                    display: block
+@media(max-width: 1569px)
+    .cat
+        &-last
+            &__img
+                background: url('../img/cat/last-bg.png') top left no-repeat
+                background-size: auto 100%
+                align-items: flex-end
+@media(max-width: 1349px)
+    .cat
+        &-last
+            &__img
+                width: 35vw
+                padding-right: 15px
+                img
+                    width: 30vw
+        &-special__text h2, &-stable__text h2
+            font-size: 38px
+            line-height: 48px
 @media(max-width: 1199px)
     .catalog
         &__cont
@@ -87,6 +365,10 @@
             line-height: 20px
         &__card
             width: 125px
+    .cat
+        &__wrap
+            grid-template-columns: repeat(2, 1fr)
+            width: 600px
 @media(max-width: 991px)
     .catalog
         &__block
@@ -105,6 +387,53 @@
             max-width: 100%
         &__card
             width: 152px
+    .cat
+        &__all
+            display: block
+            overflow: hidden
+        &__aside
+            margin-bottom: 40px
+        &__wrap
+            width: 100%
+        &-last
+            background-color: transparent
+            padding-bottom: 70px
+            margin-bottom: 0
+            &__img
+                margin-bottom: 75px
+                position: static
+                width: 100vw
+                height: 400px
+                background: #F8F8F8 url('../img/cat/last-bg.png') top right no-repeat
+                background-size: auto 100%
+                align-items: flex-start
+                img
+                    height: 110%
+                    width: auto
+                    max-width: 200vw
+        &-special
+            &__img
+                display: none
+            &__mob
+                display: block
+                img
+                    max-width: 100%
+            &__text
+                width: 100%
+        &-stable
+            &__wrap
+                display: block
+            &__bot
+                display: block
+            &__block
+                width: 100%
+                margin-bottom: 15px
+            &__img
+                max-width: 100%
+                img
+                    max-width: 100%
+            &__text
+                max-width: 100%
 @media(max-width: 767px)
     .catalog
         &__card
@@ -142,3 +471,88 @@
         &__wrap
             grid-gap: 15px 0
             justify-content: space-between
+    .cat
+        padding-top: 40px
+        &-last
+            &__wrap
+                flex-direction: column
+                grid-gap: 15px
+            &__top
+                font-size: 16px
+                line-height: 20px
+                margin-bottom: 15px
+            &__title
+                font-size: 32px
+                line-height: 36px
+                margin-bottom: 15px
+            &__descr
+                font-size: 16px
+                line-height: 20px
+                margin-bottom: 32px
+            &__block
+                width: 100%
+                background: #F8F8F8
+                border: 0
+            &__img
+                height: 260px
+        &-special
+            margin-bottom: 60px
+            &__text
+                h2
+                    font-size: 32px
+                    line-height: 36px
+                    margin-bottom: 15px
+                p
+                    font-size: 16px
+                    line-height: 20px
+                    margin-bottom: 22px
+                h3
+                    font-size: 20px
+                    line-height: 24px
+                    margin-bottom: 10px
+            &__mob
+                margin-bottom: 27px
+            &__btn
+                margin-top: 0
+        &-stable
+            margin-bottom: 0px
+            &__text
+                p
+                    font-size: 16px
+                    line-height: 20px
+                    margin-bottom: 15px
+                h2
+                    font-size: 32px
+                    line-height: 36px
+                    margin-bottom: 15px
+            &__block
+                padding: 21px 23px
+                b
+                    font-size: 20px
+                    line-height: 24px
+                p
+                    font-size: 16px
+                    line-height: 20px
+                    margin-top: 17px
+            &__img
+                width: 100%
+                height: auto
+        &__wrap
+            display: block
+        &__cat
+            margin-bottom: 24px
+            font-size: 20px
+            line-height: 24px
+        &__block
+            margin-bottom: 18px
+        &__all
+            margin-bottom: 68px
+        &__aside
+            width: 100%
+            &>ul>li>a
+                font-size: 16px
+                line-height: 17px
+                margin-bottom: 17px
+@media(max-width: 349px)
+    .cat-special__text h2
+        font-size: 28px
