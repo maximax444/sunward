@@ -89,3 +89,146 @@ $('.card-mob__tabs > a').on('click', function (e) {
     $(this).toggleClass('active');
     $(this).next('.card-info__harblock').toggleClass('active');
 });
+const swiper = new Swiper('.home-news .swiper', {
+
+    slidesPerView: 3,
+    spaceBetween: 14,
+    loop: false,
+    // Navigation arrows
+    navigation: {
+        nextEl: '.home-news__next',
+        prevEl: '.home-news__prev',
+    },
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 0
+        },
+        // when window width is >= 480px
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 14
+        },
+        // when window width is >= 640px
+        992: {
+            slidesPerView: 2,
+            spaceBetween: 14
+        },
+        // when window width is >= 640px
+        1200: {
+            slidesPerView: 3,
+            spaceBetween: 14
+        }
+    }
+});
+swiper.on("slideChange afterInit init", function () {
+    let currentSlide = this.activeIndex + 1;
+    var curr;
+    var all;
+    if (this.slides.length - 2 < 10) {
+        all = '0' + (this.slides.length - 2);
+    } else {
+        all = this.slides.length - 2;
+    }
+    if (currentSlide < 10) {
+        curr = '0' + currentSlide;
+    } else {
+        curr = currentSlide;
+    }
+    $('.home-news .pages__curr').html(curr);
+    $('.home-news .pages__all span').html(all);
+
+
+});
+$(document).ready(function () {
+    swiper.slideNext();
+    swiper.slidePrev();
+    swiper2.slideNext();
+    swiper2.slidePrev();
+    swiper3.slideNext();
+    swiper3.slidePrev();
+});
+
+const swiper2 = new Swiper('.home-catalog .swiper', {
+
+    slidesPerView: 3,
+    spaceBetween: 14,
+    loop: false,
+    // Navigation arrows
+    navigation: {
+        nextEl: '.home-catalog__next',
+        prevEl: '.home-catalog__prev',
+    },
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 0
+        },
+        // when window width is >= 480px
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 14
+        },
+        // when window width is >= 640px
+        992: {
+            slidesPerView: 2,
+            spaceBetween: 14
+        },
+        // when window width is >= 640px
+        1200: {
+            slidesPerView: 3,
+            spaceBetween: 14
+        }
+    }
+});
+swiper2.on("slideChange afterInit init", function () {
+    let currentSlide = this.activeIndex + 1;
+    var curr;
+    var all;
+    if (this.slides.length - 2 < 10) {
+        all = '0' + (this.slides.length - 2);
+    } else {
+        all = this.slides.length - 2;
+    }
+    if (currentSlide < 10) {
+        curr = '0' + currentSlide;
+    } else {
+        curr = currentSlide;
+    }
+    $('.home-catalog .pages__curr').html(curr);
+    $('.home-catalog .pages__all span').html(all);
+
+
+});
+const swiper3 = new Swiper('.main .swiper', {
+
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: false,
+    // Navigation arrows
+    navigation: {
+        nextEl: '.main__next',
+        prevEl: '.main__prev',
+    }
+});
+swiper3.on("slideChange afterInit init", function () {
+    let currentSlide = this.activeIndex + 1;
+    var curr;
+    var all;
+    if (this.slides.length < 10) {
+        all = '0' + (this.slides.length);
+    } else {
+        all = this.slides.length;
+    }
+    if (currentSlide < 10) {
+        curr = '0' + currentSlide;
+    } else {
+        curr = currentSlide;
+    }
+    $('.main .pages__curr').html(curr);
+    $('.main .pages__all span').html(all);
+
+
+});
