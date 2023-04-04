@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SunWard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrap">
+            <a href="" class="header__logo">
+                <img src="img/logo.svg" alt="">
+            </a>
+            <ul class="header__menu">
+                <li><a href="/">Главная</a></li>
+                <li>
+                    <a href="/catalog.html">Каталог техники</a>
+                    <ul>
+                        <li><a href="">Техника для строительства фундаментов</a></li>
+                        <li><a href="">Буровые и дробильные устрановки</a></li>
+                        <li><a href="">Экскаваторы</a></li>
+                        <li><a href="">Краны</a></li>
+                        <li><a href="">Карьерные самосвалы</a></li>
+                        <li><a href="">Погрузчики с бортовым поворотом</a></li>
+                        <li><a href="">Фронтальные погрузчики</a></li>
+                        <li><a href="">Телескопические погрузчики</a></li>
+                        <li><a href="">Самоходно ножничные подъемники</a></li>
+                        <li><a href="">Бульдозеры</a></li>
+                    </ul>
+                </li>
+                <li><a href="/about.html">О компании</a></li>
+                <li><a href="/dillers.html">Наши дилеры</a></li>
+                <li><a href="/news.html">Новости</a></li>
+                <li><a href="/contacts.html">Контакты</a></li>
+            </ul>
+            <div class="header__right">
+                <div class="header__search">
+                    <a href="" class="header__search-top">
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22.6503 20.9494L16.9804 15.2561C18.4382 13.5829 19.237 11.4778 19.237 9.28624C19.237 4.16589 14.922 0 9.61849 0C4.31494 0 0 4.16589 0 9.28624C0 14.4066 4.31494 18.5725 9.61849 18.5725C11.6095 18.5725 13.5069 17.9927 15.1291 16.8921L20.842 22.6286C21.0808 22.868 21.402 23 21.7462 23C22.0719 23 22.381 22.8801 22.6156 22.6621C23.1141 22.199 23.13 21.431 22.6503 20.9494ZM9.61849 2.4225C13.5387 2.4225 16.7278 5.50149 16.7278 9.28624C16.7278 13.071 13.5387 16.15 9.61849 16.15C5.69833 16.15 2.50917 13.071 2.50917 9.28624C2.50917 5.50149 5.69833 2.4225 9.61849 2.4225Z"
+                                fill="#059A94" />
+                        </svg>
+                    </a>
+                    <form action="">
+                        <input type="text" placeholder="Введите поисковый запрос" required>
+                        <button><img src="img/search-arrow.png" alt=""></button>
+                    </form>
+                </div>
+                <a href="/contacts.html" class="header__world">
+                    <img src="img/world.svg" alt="">
+                </a>
+                <div class="header__cont">
+                    Служба поддержки
+                    <a href="tel:+7 (495) 280-73-78" class="header__phone">+7 (495) 280-73-78</a>
+                </div>
+            </div>
+            <a href="" class="header__burg">
+                <span></span>
+            </a>
+        </div>
+    </header>
+    <div class="menu">
+        <ul class="header__menu">
+            <li><a href="/">Главная</a></li>
+            <li>
+                <a href="/catalog.html">Каталог техники</a>
+                <ul>
+                    <li><a href="">Техника для строительства фундаментов</a></li>
+                    <li><a href="">Буровые и дробильные устрановки</a></li>
+                    <li><a href="">Экскаваторы</a></li>
+                    <li><a href="">Краны</a></li>
+                    <li><a href="">Карьерные самосвалы</a></li>
+                    <li><a href="">Погрузчики с бортовым поворотом</a></li>
+                    <li><a href="">Фронтальные погрузчики</a></li>
+                    <li><a href="">Телескопические погрузчики</a></li>
+                    <li><a href="">Самоходно ножничные подъемники</a></li>
+                    <li><a href="">Бульдозеры</a></li>
+                </ul>
+            </li>
+            <li><a href="/about.html">О компании</a></li>
+            <li><a href="/dillers.html">Наши дилеры</a></li>
+            <li><a href="/news.html">Новости</a></li>
+            <li><a href="/contacts.html">Контакты</a></li>
+        </ul>
+        <a href="/contacts.html" class="header__pred">
+            <img src="img/world.svg" alt="">
+            Представительства Sunward
+        </a>
+        <div class="header__mobsearch">
+            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M22.6503 20.9494L16.9804 15.2561C18.4382 13.5829 19.237 11.4778 19.237 9.28624C19.237 4.16589 14.922 0 9.61849 0C4.31494 0 0 4.16589 0 9.28624C0 14.4066 4.31494 18.5725 9.61849 18.5725C11.6095 18.5725 13.5069 17.9927 15.1291 16.8921L20.842 22.6286C21.0808 22.868 21.402 23 21.7462 23C22.0719 23 22.381 22.8801 22.6156 22.6621C23.1141 22.199 23.13 21.431 22.6503 20.9494ZM9.61849 2.4225C13.5387 2.4225 16.7278 5.50149 16.7278 9.28624C16.7278 13.071 13.5387 16.15 9.61849 16.15C5.69833 16.15 2.50917 13.071 2.50917 9.28624C2.50917 5.50149 5.69833 2.4225 9.61849 2.4225Z"
+                    fill="#059A94" />
+            </svg>
+            <form action="">
+                <input type="text" placeholder="Введите поисковый запрос" required>
+                <button><img src="img/search-arrow.png" alt=""></button>
+            </form>
+
+        </div>
+        <div class="header__cont">
+            Служба поддержки
+            <a href="tel:+7 (495) 280-73-78" class="header__phone">+7 (495) 280-73-78</a>
+        </div>
+    </div>
+    <section class="top">
+        <img src="img/about/about-bg.jpg" alt="">
+        <div class="container">
+            <div class="top__wrap">
+                <h1 class="top__title">О компании</h1>
+                <ul class="top__bread">
+                    <li><a href="/">Sunward</a></li> /
+                    <li>О компании</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="about-miss">
+        <div class="container">
+            <div class="about-miss__wrap">
+                <div class="about-miss__cont">
+                    <h2 class="about-miss__title">Наша миссия</h2>
+                    <p class="about-miss__bold">Миссия Sunward заключается в стремлении улучшить качество жизни людей
+                    </p>
+                    <p class="about-miss__text">Эта амбициозная миссия движет каждым из наших сотрудников, начиная с
+                        основателя Sunward, профессора <br> Хэ Цинхуа.</p>
+                </div>
+                <div class="about-miss__logo">
+                    <img src="img/about/about-miss.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-history">
+        <div class="container">
+            <div class="about-history__wrap">
+                <div class="about-history__img">
+                    <img src="img/about/history.png" alt="">
+                </div>
+                <div class="about-history__cont">
+                    <h2 class="about__title">Основание Sunward</h2>
+                    <p class="about-history__text">Sunward Equipment Group была основана в 1999 году под руководством
+                        профессора Центрального южного университета, г-на Хэ Цинхуа. На сегодняшний день компания
+                        развилась до публичной компании – Sunward Equipment Co., Ltd., которая выступает в качестве
+                        основной группы. Штаб-квартира компании находится в г. Чанша, ее основная деятельность
+                        заключается в производстве оборудования. Это международная корпорация, обладающая определенным
+                        влиянием в Китае и за границей.</p>
+                    <div class="about-history__feat">
+                        <div class="about-history__block">
+                            <div class="about-history__icon">
+                                <img src="img/about/his1.svg" alt="">
+                            </div>
+                            <div class="about-history__num"><span>256</span>Идей</div>
+                        </div>
+                        <div class="about-history__block">
+                            <div class="about-history__icon">
+                                <img src="img/about/his2.svg" alt="">
+                            </div>
+                            <div class="about-history__num"><span>252</span>Патента</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-now">
+        <div class="container">
+            <div class="about-now__wrap">
+                <div class="about-now__cont">
+                    <h2 class="about__title">Sunward сегодня</h2>
+                    <div class="about-now__bold">это одна из самых высокотехнологичных инжиниринговая компания</div>
+                    <div class="about-now__text">
+                        <p>Стратегия Sunward заключается в развертывании и демонстрации своих сильных сторон и инноваций
+                            в самом сердце индустрии производства оборудования с помощью трех основных направлений:
+                            строительство, специальное и спасательное оборудование и авиация. </p>
+                        <div class="about-now__img">
+                            <img src="img/about/now.jpg" alt="">
+                        </div>
+                        <div class="about-now__block">
+                            <div class="about-now__icon"><img src="img/about/now1.svg" alt=""></div>
+                            <span>За 20 лет SUNWARD стала одной из ведущих мировых строительных компаний.</span>
+                        </div>
+                        <p>Компания придерживается ключевых ценностей: «Работа над собой, управление собственной
+                            деятельностью и постижение мира». В будущем Sunward Intelligent Equipment продолжит
+                            раскрывать свое выгодное положение в виде собственных разработок, создавать ценность
+                            для клиентов, повышать уровень жизни человечества, непрерывно продвигать продукты, несущие в
+                            себе воздействие на мир, становиться известным производственным предприятием мирового
+                            уровня.</p>
+                    </div>
+                </div>
+                <div class="about-now__img">
+                    <img src="img/about/now.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-place">
+        <div class="container">
+            <div class="about-place__wrap">
+                <div class="about-place__img">
+                    <img src="img/about/place.jpg" alt="">
+                </div>
+                <div class="about-place__cont">
+                    <h2 class="about__title">Место компании в мировом
+                        производстве техники</h2>
+                    <div class="about-place__img">
+                        <img src="img/about/place.jpg" alt="">
+                    </div>
+                    <p class="about-place__text">Имея прочную основу, Sunward создала современное производственное
+                        предприятие в Чанше. Именно там мы производим наше оборудование
+                        с лучшим соотношением цены и качества и распространяем его по всему миру через наши <b>12
+                            дочерних
+                            компаний, 5 офисов и мощную дилерскую сеть, насчитывающую более 150 дилеров.</b></p>
+                </div>
+            </div>
+            <div class="about-feat__wrap">
+                <div class="about-feat__block">
+                    <div class="about-feat__img">
+                        <img src="img/about/feat1.svg" alt="">
+                    </div>
+                    <div class="about-feat__name">31-е место среди 50</div>
+                    <div class="about-feat__descr">лучших строительных машин
+                        (Yellow Table 2021)</div>
+                </div>
+                <div class="about-feat__block">
+                    <div class="about-feat__img">
+                        <img src="img/about/feat2.svg" alt="">
+                    </div>
+                    <div class="about-feat__name">Топ-20</div>
+                    <div class="about-feat__descr">брендов производства
+                        экскаваторов</div>
+                </div>
+                <div class="about-feat__block">
+                    <div class="about-feat__img">
+                        <img src="img/about/feat3.svg" alt="">
+                    </div>
+                    <div class="about-feat__name">Топ-3</div>
+                    <div class="about-feat__descr">региональных авиализинговых
+                        компании</div>
+                </div>
+                <div class="about-feat__block">
+                    <div class="about-feat__img">
+                        <img src="img/about/feat4.svg" alt="">
+                    </div>
+                    <div class="about-feat__name">180 млрд юаней</div>
+                    <div class="about-feat__descr">общие активы Sunward
+                        Equipment Co., Ltd.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-inn">
+        <div class="container">
+            <h2 class="about-inn__title">Инновации — путь к ценности</h2>
+            <div class="about-inn__text">
+                <p>Девиз Sunward — «Инновации - путь к ценности» — отражает силу Sunward. Всего за 20 лет инновационная
+                    идея компании сделала нас глобальным игроком с годовым оборотом почти в 1 миллиард долларов.
+                    Благодаря высоким инженерным возможностям Sunward инновационные технологические решения приносят
+                    пользу нашим клиентам, нашим партнерам и нашей рабочей силе. И для общества в целом – год за годом
+                    мы совершенствуем наши инновационные и интеллектуальные продукты.</p>
+            </div>
+            <div class="about-inn__wrap">
+                <div class="about-inn__block">
+                    <div class="about-inn__img">
+                        <img src="img/about/inn1.svg" alt="">
+                    </div>
+                    <div class="about-inn__name">Строительство</div>
+                </div>
+                <div class="about-inn__block">
+                    <div class="about-inn__img">
+                        <img src="img/about/inn2.svg" alt="">
+                    </div>
+                    <div class="about-inn__name">Мостостроение</div>
+                </div>
+                <div class="about-inn__block">
+                    <div class="about-inn__img">
+                        <img src="img/about/inn3.svg" alt="">
+                    </div>
+                    <div class="about-inn__name">Энергетика</div>
+                </div>
+                <div class="about-inn__block">
+                    <div class="about-inn__img">
+                        <img src="img/about/inn4.svg" alt="">
+                    </div>
+                    <div class="about-inn__name">Металлургия</div>
+                </div>
+                <div class="about-inn__block">
+                    <div class="about-inn__img">
+                        <img src="img/about/inn5.svg" alt="">
+                    </div>
+                    <div class="about-inn__name">Добыча</div>
+                </div>
+                <div class="about-inn__block">
+                    <div class="about-inn__img">
+                        <img src="img/about/inn6.svg" alt="">
+                    </div>
+                    <div class="about-inn__name">Муниципальные
+                        службы</div>
+                </div>
+                <div class="about-inn__block">
+                    <div class="about-inn__img">
+                        <img src="img/about/inn7.svg" alt="">
+                    </div>
+                    <div class="about-inn__name">Авиация</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-sun">
+        <div class="container">
+            <div class="about-sun__wrap">
+                <div class="about-sun__cont">
+                    <h2 class="about__title">Sunward <br>
+                        Intelligent Equipment</h2>
+                    <div class="about-place__text">
+                        <p>Sunward Intelligent Equipment получила множество званий, таких
+                            как «Технический центр предпринимательства, признанный государством», «Государственная
+                            научно-исследовательская рабочая станция
+                            для докторов наук», «Государственное инновационное предприятие», «Образцовое государственное
+                            предприятие технологических инноваций», «Государственная база научно-технического
+                            сотрудничества», «Государственная база для внедрения плана 863 в производство» и т.д.
+
+                        </p>
+                        <p>Руководящие лица партии и Китая, приезжая, инспектировать компанию Sunward Intelligent
+                            Equipment, давали руководящие указания, полностью оценили и дали высокую оценку собственному
+                            инновационному потенциалу корпорации.</p>
+                    </div>
+                </div>
+                <div class="about-sun__img">
+                    <img src="img/about/cont1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-app">
+        <div class="container">
+            <div class="about-app__wrap">
+                <div class="about-app__img">
+                    <img src="img/about/cont2.jpg" alt="">
+                </div>
+                <div class="about-app__cont">
+                    <h2 class="about__title">Штаб-квартира <br>
+                        Sunward</h2>
+                    <div class="about-now__bold">120 гектар, что эквивалентно <br>
+                        168 футбольным полям</div>
+                    <div class="about-place__text">
+                        <p>Мы очень гордимся тем, что разрабатываем продукцию
+                            на одной из крупнейших в мире производственных баз строительной техники.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-video">
+        <img src="img/about/about-video.jpg" alt="">
+        <div class="about-video__cont">
+            <h2 class="about-video__title">Sunward в России</h2>
+            <p class="about-video__descr">Посмотрите видео ролик о представительстве бренда SUNWARD в России</p>
+            <a data-fancybox href="https://www.youtube.com/watch?v=PbtKRttYtFE" class="about-video__play btn">
+                Посмотреть фильм
+                <svg width="27" height="11" viewBox="0 0 27 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M26.3769 6.0504H0.623075C0.316729 6.0504 0.0692291 5.8029 0.0692291 5.49655C0.0692291 5.19021 0.316729 4.94271 0.623075 4.94271H25.039L21.6779 1.58155C21.4615 1.36521 21.4615 1.01386 21.6779 0.797514C21.8942 0.581167 22.2456 0.581167 22.4619 0.797514L26.7698 5.1054C26.929 5.26463 26.9758 5.50174 26.8892 5.70944C26.8027 5.9154 26.6002 6.0504 26.3769 6.0504Z"
+                        fill="white" />
+                    <path
+                        d="M22.0639 10.3635C21.9219 10.3635 21.78 10.3098 21.6727 10.2008C21.4564 9.98444 21.4564 9.63309 21.6727 9.41674L25.9858 5.10367C26.2021 4.88732 26.5535 4.88732 26.7698 5.10367C26.9862 5.32001 26.9862 5.67136 26.7698 5.88771L22.4567 10.2008C22.3477 10.3098 22.2058 10.3635 22.0639 10.3635Z"
+                        fill="white" />
+                </svg>
+            </a>
+        </div>
+    </section>
+    <section class="about-gal">
+        <div class="container">
+            <div class="about-gal__top">
+                <div class="pages">
+                    <div class="pages__curr">01</div>
+                    <div class="pages__all">/<span>05</span></div>
+                </div>
+                <div class="arrows">
+                    <div class="prev arrow about-gal__prev">
+                        <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.52019 10.4885L3.02301 6.99131L13.4583 6.99131C13.4889 6.99131 13.5191 6.98975 13.5489 6.98671C13.9953 6.94138 14.3437 6.56433 14.3437 6.1059C14.3437 5.61686 13.9473 5.22048 13.4583 5.22048L3.02301 5.22048L6.52019 1.7233C6.86593 1.37749 6.86593 0.816912 6.52019 0.471104C6.17438 0.125367 5.61381 0.125367 5.268 0.471104L0.259304 5.4798C-0.086433 5.82554 -0.0864329 6.38618 0.259305 6.73199L5.268 11.7406C5.27339 11.746 5.27884 11.7514 5.28436 11.7566C5.3229 11.7932 5.36391 11.8257 5.40691 11.8541C5.65241 12.0162 5.96082 12.0432 6.2273 11.9351C6.33383 11.8919 6.43371 11.8271 6.52019 11.7406C6.52558 11.7352 6.53089 11.7298 6.53613 11.7243C6.86586 11.3774 6.86055 10.8288 6.52019 10.4885Z"
+                                fill="black" />
+                        </svg>
+                    </div>
+                    <div class="next arrow about-gal__next">
+                        <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7.82356 1.51156L11.3207 5.00872H0.885417C0.854852 5.00872 0.824656 5.01028 0.794885 5.01332C0.348408 5.05866 0 5.4357 0 5.89413C0 6.38317 0.396412 6.77955 0.885417 6.77955H11.3207L7.82356 10.2767C7.47782 10.6225 7.47782 11.1831 7.82356 11.5289C8.16936 11.8747 8.72994 11.8747 9.07575 11.5289L14.0844 6.52023C14.4302 6.17449 14.4302 5.61385 14.0844 5.26804L9.07575 0.259392C9.07036 0.253988 9.06491 0.248675 9.05939 0.243441C9.02085 0.206798 8.97984 0.1743 8.93684 0.145938C8.69134 -0.0161495 8.38293 -0.0431583 8.11645 0.0648908C8.00992 0.108113 7.91004 0.172947 7.82356 0.259392C7.81817 0.264797 7.81286 0.270251 7.80762 0.275755C7.47789 0.62264 7.4832 1.17119 7.82356 1.51156Z"
+                                fill="black" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <a data-fancybox="gallery" href="img/about/gal1.jpg" class="swiper-slide">
+                        <img src="img/about/gal1.jpg" alt="">
+                    </a>
+                    <a data-fancybox="gallery" href="img/about/gal1.jpg" class="swiper-slide">
+                        <img src="img/about/gal1.jpg" alt="">
+                    </a>
+                    <a data-fancybox="gallery" href="img/about/gal1.jpg" class="swiper-slide">
+                        <img src="img/about/gal1.jpg" alt="">
+                    </a>
+                    <a data-fancybox="gallery" href="img/about/gal1.jpg" class="swiper-slide">
+                        <img src="img/about/gal1.jpg" alt="">
+                    </a>
+                    <a data-fancybox="gallery" href="img/about/gal1.jpg" class="swiper-slide">
+                        <img src="img/about/gal1.jpg" alt="">
+                    </a>
+                    <a data-fancybox="gallery" href="img/about/gal1.jpg" class="swiper-slide">
+                        <img src="img/about/gal1.jpg" alt="">
+                    </a>
+                    <a data-fancybox="gallery" href="img/about/gal1.jpg" class="swiper-slide">
+                        <img src="img/about/gal1.jpg" alt="">
+                    </a>
+                    <a data-fancybox="gallery" href="img/about/gal1.jpg" class="swiper-slide">
+                        <img src="img/about/gal1.jpg" alt="">
+                    </a>
+                    <a data-fancybox="gallery" href="img/about/gal1.jpg" class="swiper-slide">
+                        <img src="img/about/gal1.jpg" alt="">
+                    </a>
+                    <a data-fancybox="gallery" href="img/about/gal1.jpg" class="swiper-slide">
+                        <img src="img/about/gal1.jpg" alt="">
+                    </a>
+                    <a data-fancybox="gallery" href="img/about/gal1.jpg" class="swiper-slide">
+                        <img src="img/about/gal1.jpg" alt="">
+                    </a>
+                    <a data-fancybox="gallery" href="img/about/gal1.jpg" class="swiper-slide">
+                        <img src="img/about/gal1.jpg" alt="">
+                    </a>
+                    <a data-fancybox="gallery" href="img/about/gal1.jpg" class="swiper-slide">
+                        <img src="img/about/gal1.jpg" alt="">
+                    </a>
+                    <a data-fancybox="gallery" href="img/about/gal1.jpg" class="swiper-slide">
+                        <img src="img/about/gal1.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="about-gal__top">
+                <div class="pages">
+                    <div class="pages__curr">01</div>
+                    <div class="pages__all">/<span>05</span></div>
+                </div>
+                <div class="arrows">
+                    <div class="prev arrow about-gal__prev">
+                        <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.52019 10.4885L3.02301 6.99131L13.4583 6.99131C13.4889 6.99131 13.5191 6.98975 13.5489 6.98671C13.9953 6.94138 14.3437 6.56433 14.3437 6.1059C14.3437 5.61686 13.9473 5.22048 13.4583 5.22048L3.02301 5.22048L6.52019 1.7233C6.86593 1.37749 6.86593 0.816912 6.52019 0.471104C6.17438 0.125367 5.61381 0.125367 5.268 0.471104L0.259304 5.4798C-0.086433 5.82554 -0.0864329 6.38618 0.259305 6.73199L5.268 11.7406C5.27339 11.746 5.27884 11.7514 5.28436 11.7566C5.3229 11.7932 5.36391 11.8257 5.40691 11.8541C5.65241 12.0162 5.96082 12.0432 6.2273 11.9351C6.33383 11.8919 6.43371 11.8271 6.52019 11.7406C6.52558 11.7352 6.53089 11.7298 6.53613 11.7243C6.86586 11.3774 6.86055 10.8288 6.52019 10.4885Z"
+                                fill="black" />
+                        </svg>
+                    </div>
+                    <div class="next arrow about-gal__next">
+                        <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7.82356 1.51156L11.3207 5.00872H0.885417C0.854852 5.00872 0.824656 5.01028 0.794885 5.01332C0.348408 5.05866 0 5.4357 0 5.89413C0 6.38317 0.396412 6.77955 0.885417 6.77955H11.3207L7.82356 10.2767C7.47782 10.6225 7.47782 11.1831 7.82356 11.5289C8.16936 11.8747 8.72994 11.8747 9.07575 11.5289L14.0844 6.52023C14.4302 6.17449 14.4302 5.61385 14.0844 5.26804L9.07575 0.259392C9.07036 0.253988 9.06491 0.248675 9.05939 0.243441C9.02085 0.206798 8.97984 0.1743 8.93684 0.145938C8.69134 -0.0161495 8.38293 -0.0431583 8.11645 0.0648908C8.00992 0.108113 7.91004 0.172947 7.82356 0.259392C7.81817 0.264797 7.81286 0.270251 7.80762 0.275755C7.47789 0.62264 7.4832 1.17119 7.82356 1.51156Z"
+                                fill="black" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-mob">
+            <div class="container">
+                <a href="/" class="footer__logo">
+                    <img src="img/footer-logo2.svg" alt="">
+                </a>
+                <div class="footer__title">Контакты</div>
+                <div class="footer__small">
+                    <div class="footer__pwrap">
+                        <div class="footer__sp">Служба поддержки</div>
+                        <a href="tel:+7 (495) 280-73-78" class="footer__phone">
+                            +7 (495) 280-73-78</a>
+                    </div>
+                    <div class="footer__soc">
+                        <a href="">
+                            <img src="img/footer-soc.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="img/footer-soc.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="img/footer-soc.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <ul class="footer__menu">
+                    <li>
+                        <a href="">Каталог техники</a>
+                        <ul>
+                            <li><a href="">Техника для строительства фундаментов</a></li>
+                            <li><a href=""> Буровые и дробильные устрановки</a></li>
+                            <li><a href="">Экскаваторы</a></li>
+                            <li><a href="">Краны</a></li>
+                            <li><a href="">Карьерные самосвалы</a></li>
+                            <li><a href="">Погрузчики с бортовым поворотом</a></li>
+                            <li><a href="">Фронтальные погрузчики</a></li>
+                            <li><a href="">Телескопические погрузчики</a></li>
+                            <li><a href="">Самоходно ножничные подъемники</a></li>
+                            <li><a href="">Бульдозеры</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">О компании</a>
+                        <ul>
+                            <li><a href="">Наши дилеры</a></li>
+                            <li><a href="">Новости</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="footer__links">
+                    <a href="">Сведения об обработке персональных данных</a>
+                    <a href="">Политика конфиденциальности</a>
+                </div>
+                <div class="footer__subtitle">САНВАРД РУС ООО</div>
+                <p class="footer__text">Комплектация и внешний вид продукции, перечисленной в рамках меню сайта,
+                    представлена
+                    на основе реального оборудования. В целях постоянной работы по техническому совершенствованию
+                    продукции, удовлетворяющей спрос покупателей и соответствующие законные требования государства,
+                    Sunward Intelligent Equipment Group имеет право вносить изменения
+                    в спецификацию вышеуказанной продукции
+                    без отдельного уведомления.</p>
+                <a href="https://www.versality.ru/" class="footer__dev" target="_blank">
+                    Сайт разработан и поддерживается
+                    <img src="img/hero-logo.svg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer__wrap">
+                <div class="footer__main">
+                    <a href="/" class="footer__logo">
+                        <img src="img/footer-logo.svg" alt="">
+                    </a>
+                    <div class="footer__subtitle">САНВАРД РУС ООО</div>
+                    <p class="footer__text">Комплектация и внешний вид продукции, перечисленной в рамках меню сайта,
+                        представлена
+                        на основе реального оборудования. В целях постоянной работы по техническому совершенствованию
+                        продукции, удовлетворяющей спрос покупателей и соответствующие законные требования государства,
+                        Sunward Intelligent Equipment Group имеет право вносить изменения
+                        в спецификацию вышеуказанной продукции
+                        без отдельного уведомления.</p>
+                </div>
+                <ul class="footer__menu">
+                    <li>
+                        <a href="">Каталог техники</a>
+                        <ul>
+                            <li><a href="">Техника для строительства фундаментов</a></li>
+                            <li><a href=""> Буровые и дробильные устрановки</a></li>
+                            <li><a href="">Экскаваторы</a></li>
+                            <li><a href="">Краны</a></li>
+                            <li><a href="">Карьерные самосвалы</a></li>
+                            <li><a href="">Погрузчики с бортовым поворотом</a></li>
+                            <li><a href="">Фронтальные погрузчики</a></li>
+                            <li><a href="">Телескопические погрузчики</a></li>
+                            <li><a href="">Самоходно ножничные подъемники</a></li>
+                            <li><a href="">Бульдозеры</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">О компании</a>
+                        <ul>
+                            <li><a href="">Наши дилеры</a></li>
+                            <li><a href="">Новости</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="footer__contacts">
+                    <div class="footer__title">Контакты</div>
+                    <div class="footer__sp">Служба поддержки</div>
+                    <a href="tel:+7 (495) 280-73-78" class="footer__phone">
+                        +7 (495) 280-73-78</a>
+                    <div class="footer__links">
+                        <a href="">Сведения об обработке персональных данных</a>
+                        <a href="">Политика конфиденциальности</a>
+                    </div>
+                    <div class="footer__soc">
+                        <a href="">
+                            <img src="img/footer-soc.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="img/footer-soc.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="img/footer-soc.png" alt="">
+                        </a>
+                    </div>
+                    <a href="https://www.versality.ru/" class="footer__dev" target="_blank">
+                        Сайт разработан и поддерживается
+                        <img src="img/hero-logo.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+        integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -23,6 +23,47 @@
         padding-left: 20px
         padding-right: 20px
         margin: auto
+.countries
+    background: #FFFFFF
+    border: 1px solid #ECECEC
+    position: fixed
+    left: 0
+    top: 98px
+    width: 100%
+    max-height: calc(100vh - 98px)
+    overflow-y: scroll
+    z-index: 11
+    padding: 42px 0
+    display: none
+    &.active
+        display: block
+    &__wrap
+        display: flex
+        flex-wrap: wrap
+        grid-gap: 37px 0
+    &__block
+        width: 255px
+        padding-right: 25px
+    &__name
+        font-weight: 700
+        font-size: 23px
+        line-height: 28px
+        display: block
+        margin-bottom: 17px
+        text-decoration: none
+        color: #000000
+        &:hover
+            color: #F4A749
+    &__el
+        font-size: 18px
+        line-height: 22px
+        display: block
+        margin-bottom: 22px
+        display: block
+        color: #000000
+        text-decoration: none
+        &:hover
+            color: #F4A749
 .top
     height: 390px
     position: relative
@@ -286,6 +327,10 @@
         display: flex
         align-items: center
         justify-content: space-between
+    &__world
+        &.active, &:hover
+            path
+                fill: #F39A2F
     &__menu
         list-style-type: none
         padding: 0
@@ -496,6 +541,10 @@
         &__cont
             display: none
 @media (max-width: 991px)
+    .countries
+        top: 83px
+        width: 100%
+        max-height: calc(100vh - 83px)
     .footer
         &-mob
             display: block
@@ -669,6 +718,16 @@
                         transform: rotate(-45deg)
                         background-color: #fff
 @media (max-width: 575px)
+    .countries
+        &__block
+            width: 50%
+        &__name
+            font-size: 20px
+            line-height: 24px
+        &__el
+            font-size: 16px
+            line-height: 20px
+            margin-bottom: 10px
     .select
         select
             padding: 14px 23px

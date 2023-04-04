@@ -20,6 +20,17 @@ $('.header__search-top').on('click', function (e) {
     e.preventDefault();
     $(this).closest('.header__search').toggleClass('active');
 });
+$('.header__world, .header__pred').on('click', function (e) {
+    e.preventDefault();
+    $('.countries').toggleClass('active');
+    $(this).toggleClass('active');
+    if ($(this).hasClass('active')) {
+        $('body').css('overflow', 'hidden');
+    } else {
+        $('body').css('overflow', 'visible');
+    }
+});
+
 $(document).mouseup(function (e) {
     var container = $(".header__search");
     if (container.has(e.target).length === 0) {
@@ -39,6 +50,7 @@ $('.header__burg').on('click', function (e) {
         $('html, body').css('overflow', 'hidden');
     } else {
         $('html, body').css('overflow', 'visible');
+        $('.countries').removeClass('active');
     }
 });
 $('.menu ul ul').each(function () {
@@ -154,6 +166,7 @@ const swiper2 = new Swiper('.home-catalog .swiper', {
 
     slidesPerView: 3,
     spaceBetween: 14,
+    slidesPerGroup: 3,
     loop: false,
     // Navigation arrows
     navigation: {
@@ -229,6 +242,69 @@ swiper3.on("slideChange afterInit init", function () {
     }
     $('.main .pages__curr').html(curr);
     $('.main .pages__all span').html(all);
+
+
+});
+const swiper4 = new Swiper('.about-gal .swiper', {
+
+    slidesPerView: 3,
+    grid: {
+        rows: 2,
+    },
+    slidesPerGroup: 3,
+    spaceBetween: 13,
+    loop: false,
+    // Navigation arrows
+    navigation: {
+        nextEl: '.about-gal__next',
+        prevEl: '.about-gal__prev',
+    },
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 1,
+            grid: {
+                rows: 1,
+            },
+            slidesPerGroup: 1,
+            spaceBetween: 13,
+        },
+        // when window width is >= 480px
+        768: {
+            slidesPerView: 2,
+            grid: {
+                rows: 2,
+            },
+            slidesPerGroup: 2,
+            spaceBetween: 13,
+        },
+        // when window width is >= 640px
+        992: {
+            slidesPerView: 3,
+            grid: {
+                rows: 2,
+            },
+            slidesPerGroup: 3,
+            spaceBetween: 13
+        }
+    }
+});
+swiper4.on("slideChange afterInit init", function () {
+    let currentSlide = this.activeIndex + 1;
+    var curr;
+    var all;
+    if (this.slides.length < 20) {
+        all = '0' + (this.slides.length / 2 - 2);
+    } else {
+        all = this.slides.length / 2 - 2;
+    }
+    if (currentSlide < 10) {
+        curr = '0' + currentSlide;
+    } else {
+        curr = currentSlide;
+    }
+    $('.about-gal .pages__curr').html(curr);
+    $('.about-gal .pages__all span').html(all);
 
 
 });
