@@ -154,12 +154,22 @@ swiper.on("slideChange afterInit init", function () {
 
 });
 $(document).ready(function () {
-    swiper.slideNext();
-    swiper.slidePrev();
-    swiper2.slideNext();
-    swiper2.slidePrev();
-    swiper3.slideNext();
-    swiper3.slidePrev();
+    if ($(swiper.el).length) {
+        swiper.slideNext();
+        swiper.slidePrev();
+    }
+    if ($(swiper2.el).length) {
+        swiper2.slideNext();
+        swiper2.slidePrev();
+    }
+    if ($(swiper3.el).length) {
+        swiper3.slideNext();
+        swiper3.slidePrev();
+    }
+    if ($(swiper4.el).length) {
+        swiper4.slideNext();
+        swiper4.slidePrev();
+    }
 });
 
 const swiper2 = new Swiper('.home-catalog .swiper', {
@@ -293,10 +303,10 @@ swiper4.on("slideChange afterInit init", function () {
     let currentSlide = this.activeIndex + 1;
     var curr;
     var all;
-    if (this.slides.length < 20) {
-        all = '0' + (this.slides.length / 2 - 2);
+    if (Math.round(this.slides.length / 3) < 10) {
+        all = '0' + Math.round(this.slides.length / 3);
     } else {
-        all = this.slides.length / 2 - 2;
+        all = Math.round(this.slides.length / 3);
     }
     if (currentSlide < 10) {
         curr = '0' + currentSlide;

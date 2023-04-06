@@ -130,6 +130,7 @@
         &__img
             width: 660px
             height: 545px
+            overflow: hidden
             img
                 width: 100%
                 height: 100%
@@ -218,6 +219,7 @@
         &__img
             width: 660px
             height: 466px
+            overflow: hidden
             img
                 width: 100%
                 height: 100%
@@ -234,6 +236,7 @@
         &__img
             width: 600px
             height: 345px
+            overflow: hidden
             img
                 width: 100%
                 height: 100%
@@ -245,6 +248,7 @@
         justify-content: center
         align-items: center
         background: #008D84
+        overflow: hidden
         &::after
             content: ""
             display: block
@@ -261,7 +265,7 @@
             width: 100%
             height: 100%
             object-fit: cover
-            opacity: 0.6
+            opacity: 0.6 !important
         &__cont
             position: relative
             z-index: 2
@@ -288,6 +292,10 @@
             padding: 19px 40px
             background: #F39A2E
             text-decoration: none
+            padding-left: 10px
+            padding-right: 10px
+            &:hover
+                grid-gap: 18px
     &-gal
         padding-top: 110px
         padding-bottom: 120px
@@ -317,8 +325,6 @@
                 .about-place__img
                     display: block
 @media(max-width: 1199px)
-    section
-        overflow: hidden
     .about
         &-miss
             &__wrap
@@ -579,6 +585,8 @@
             .arrows
                 display: flex
                 justify-content: space-between
+                position: relative
+                z-index: 3
             .pages
                 text-align: center
                 width: 100%
