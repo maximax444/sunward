@@ -175,8 +175,16 @@
                         <div class="select ">
                             <select name="" id="" onclick="selectChange(this);" onblur="selectBlur(this);">
                                 <option value="0">Интересующая техника*</option>
-                                <option value="1">2</option>
-                                <option value="2">3</option>
+                                <option value="1">Техника для строительства фундаментов</option>
+                                <option value="2">Буровые и дробильные устрановки</option>
+                                <option value="2">Экскаваторы</option>
+                                <option value="2">Краны</option>
+                                <option value="2">Карьерные самосвалы</option>
+                                <option value="2">Погрузчики с бортовым поворотом</option>
+                                <option value="2">Фронтальные погрузчики</option>
+                                <option value="2">Телескопические погрузчики</option>
+                                <option value="2">Самоходные ножничные подъемники</option>
+                                <option value="2">Бульдозеры</option>
                             </select>
                         </div>
                         <input type="text" placeholder="Из какого Вы города?*" required>
@@ -342,100 +350,200 @@
         function init() {
             // Basic options for a simple Google Map
             // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-            var mapOptions = {
-                // How zoomed in you want the map to start at (always required)
-                zoom: 12,
-                zoomControl: false,
-                // scaleControl: false,
-                streetViewControl: false,
-                mapTypeControl: false,
-                fullscreenControl: false,
-                // The latitude and longitude to center the map (always required)
-                center: new google.maps.LatLng(55.814007, 37.636033), // New York
+            if (window.innerWidth < 768) {
+                var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
 
-                // How you would like to style the map. 
-                // This is where you would paste any style found on Snazzy Maps.
-                styles: [
-                    {
-                        "featureType": "administrative",
-                        "elementType": "labels.text.fill",
-                        "stylers": [
-                            {
-                                "color": "#444444"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "landscape",
-                        "elementType": "all",
-                        "stylers": [
-                            {
-                                "color": "#f2f2f2"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "poi",
-                        "elementType": "all",
-                        "stylers": [
-                            {
-                                "visibility": "off"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "road",
-                        "elementType": "all",
-                        "stylers": [
-                            {
-                                "saturation": -100
-                            },
-                            {
-                                "lightness": 45
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "road.highway",
-                        "elementType": "all",
-                        "stylers": [
-                            {
-                                "visibility": "simplified"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "road.arterial",
-                        "elementType": "labels.icon",
-                        "stylers": [
-                            {
-                                "visibility": "off"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "transit",
-                        "elementType": "all",
-                        "stylers": [
-                            {
-                                "visibility": "off"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "water",
-                        "elementType": "all",
-                        "stylers": [
-                            {
-                                "color": "#008d84"
-                            },
-                            {
-                                "visibility": "on"
-                            }
-                        ]
-                    }
-                ]
-            };
+                    zoom: 10,
+                    zoomControl: false,
+                    // scaleControl: false,
+                    streetViewControl: false,
+                    mapTypeControl: false,
+                    fullscreenControl: false,
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(55.813007, 37.536033), // New York
+
+                    // How you would like to style the map. 
+                    // This is where you would paste any style found on Snazzy Maps.
+                    styles: [
+                        {
+                            "featureType": "administrative",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                                {
+                                    "color": "#444444"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "landscape",
+                            "elementType": "all",
+                            "stylers": [
+                                {
+                                    "color": "#f2f2f2"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "poi",
+                            "elementType": "all",
+                            "stylers": [
+                                {
+                                    "visibility": "off"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road",
+                            "elementType": "all",
+                            "stylers": [
+                                {
+                                    "saturation": -100
+                                },
+                                {
+                                    "lightness": 45
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.highway",
+                            "elementType": "all",
+                            "stylers": [
+                                {
+                                    "visibility": "simplified"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.arterial",
+                            "elementType": "labels.icon",
+                            "stylers": [
+                                {
+                                    "visibility": "off"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "transit",
+                            "elementType": "all",
+                            "stylers": [
+                                {
+                                    "visibility": "off"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "water",
+                            "elementType": "all",
+                            "stylers": [
+                                {
+                                    "color": "#008d84"
+                                },
+                                {
+                                    "visibility": "on"
+                                }
+                            ]
+                        }
+                    ]
+                };
+            } else {
+                var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+
+                    zoom: 11,
+                    zoomControl: false,
+                    // scaleControl: false,
+                    streetViewControl: false,
+                    mapTypeControl: false,
+                    fullscreenControl: false,
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(55.814007, 37.636033), // New York
+
+                    // How you would like to style the map. 
+                    // This is where you would paste any style found on Snazzy Maps.
+                    styles: [
+                        {
+                            "featureType": "administrative",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                                {
+                                    "color": "#444444"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "landscape",
+                            "elementType": "all",
+                            "stylers": [
+                                {
+                                    "color": "#f2f2f2"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "poi",
+                            "elementType": "all",
+                            "stylers": [
+                                {
+                                    "visibility": "off"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road",
+                            "elementType": "all",
+                            "stylers": [
+                                {
+                                    "saturation": -100
+                                },
+                                {
+                                    "lightness": 45
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.highway",
+                            "elementType": "all",
+                            "stylers": [
+                                {
+                                    "visibility": "simplified"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.arterial",
+                            "elementType": "labels.icon",
+                            "stylers": [
+                                {
+                                    "visibility": "off"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "transit",
+                            "elementType": "all",
+                            "stylers": [
+                                {
+                                    "visibility": "off"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "water",
+                            "elementType": "all",
+                            "stylers": [
+                                {
+                                    "color": "#008d84"
+                                },
+                                {
+                                    "visibility": "on"
+                                }
+                            ]
+                        }
+                    ]
+                };
+            }
+
 
             // Get the HTML DOM element that will contain your map 
             // We are using a div with id="map" seen below in the <body>
