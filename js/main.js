@@ -18,7 +18,12 @@ function selectBlur(target) {
 // });
 $('.header__search-top').on('click', function (e) {
     e.preventDefault();
-    $(this).closest('.header__search').toggleClass('active');
+    $(this).closest('.header__search').toggleClass('ac');
+    if ($(this).closest('.header__search').hasClass('ac')) {
+        $('.header__search form').slideDown();
+    } else {
+        $('.header__search form').slideUp();
+    }
 });
 $('.header__world, .header__pred').on('click', function (e) {
     e.preventDefault();
