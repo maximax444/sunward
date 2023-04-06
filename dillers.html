@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SunWard</title>
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -110,103 +112,149 @@
         </div>
     </div>
     <section class="top">
-        <img src="img/contacts-bg.jpg" alt="">
+        <img src="img/card/dillers-bg.jpg" alt="">
         <div class="container">
             <div class="top__wrap">
-                <h1 class="top__title">Контакты</h1>
+                <h1 class="top__title">Наши дилеры</h1>
                 <ul class="top__bread">
                     <li><a href="/">Sunward</a></li> /
-                    <li>Контакты</li>
+                    <li>Наши дилеры</li>
                 </ul>
             </div>
         </div>
     </section>
-    <section class="contacts">
+    <section class="dillers">
         <div class="container">
-            <div class="contacts__wrap">
-                <div class="contacts__main">
-                    <h2 class="contacts__title">Мы всегда на связи</h2>
-                    <p class="contacts__text">Профессиональная команда по&nbsp;оказанию маркетинговых услуг
-                        и&nbsp;сеть маркетинговых услуг, распространяющаяся по&nbsp;всему миру позволяют продукции корпорации
-                        хорошо продаваться в&nbsp;Китае и&nbsp;за&nbsp;рубежом и&nbsp;экспортироваться в&nbsp;100&nbsp;стран и&nbsp;регионов мира.</p>
-                    <h3 class="contacts__subtitle">ООО «САНВАРД РУС»</h3>
+            <h2 class="dillers__title">Поиск дилеров</h2>
+            <form action="" class="dillers__form">
+                <div class="dillers__select">
+                    <span>Интересующая техника</span>
+                    <div class="select ">
+                        <select name="" id="" onclick="selectChange(this);" onblur="selectBlur(this);">
+                            <option value="0">Выбрать категорию*</option>
+                            <option value="1">Техника для строительства фундаментов</option>
+                            <option value="2">Буровые и дробильные устрановки</option>
+                            <option value="2">Экскаваторы</option>
+                            <option value="2">Краны</option>
+                            <option value="2">Карьерные самосвалы</option>
+                            <option value="2">Погрузчики с бортовым поворотом</option>
+                            <option value="2">Фронтальные погрузчики</option>
+                            <option value="2">Телескопические погрузчики</option>
+                            <option value="2">Самоходные ножничные подъемники</option>
+                            <option value="2">Бульдозеры</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="dillers__select">
+                    <span>Укажите Ваш город</span>
+                    <div class="select ">
+                        <select name="" id="" onclick="selectChange(this);" onblur="selectBlur(this);">
+                            <option value="0">Санкт-Петербург</option>
+                            <option value="1">Москва</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="btn dillers__btn">
+                    Поиск дилеров
+                    <svg width="27" height="11" viewBox="0 0 27 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M26.3769 6.0504H0.623075C0.316729 6.0504 0.0692291 5.8029 0.0692291 5.49655C0.0692291 5.19021 0.316729 4.94271 0.623075 4.94271H25.039L21.6779 1.58155C21.4615 1.36521 21.4615 1.01386 21.6779 0.797514C21.8942 0.581167 22.2456 0.581167 22.4619 0.797514L26.7698 5.1054C26.929 5.26463 26.9758 5.50174 26.8892 5.70944C26.8027 5.9154 26.6002 6.0504 26.3769 6.0504Z"
+                            fill="white" />
+                        <path
+                            d="M22.0639 10.3635C21.9219 10.3635 21.78 10.3098 21.6727 10.2008C21.4564 9.98444 21.4564 9.63309 21.6727 9.41674L25.9858 5.10367C26.2021 4.88732 26.5535 4.88732 26.7698 5.10367C26.9862 5.32001 26.9862 5.67136 26.7698 5.88771L22.4567 10.2008C22.3477 10.3098 22.2058 10.3635 22.0639 10.3635Z"
+                            fill="white" />
+                    </svg>
+                </button>
+            </form>
+            <div class="dillers__wrap">
+                <div class="dillers__block">
+                    <div class="dillers__name">ООО «ГК ВЕРТИКАЛЬ»</div>
                     <a href="" class="contacts__block">
                         <span class="contacts__icon">
                             <img src="img/contacts/c1.svg" alt="">
                         </span>
-                        <span class="contacts__link">Адрес офиса:143441, Московская область,
-                            Красногорский район, п/о Путилково, <br>
-                            69 км МКАД, тер.Гринвуд, стр.23, этаж 3, офис 196</span>
+                        <span class="contacts__link">Московское ш., 42, корп. 2, <br>
+                            Санкт-Петербург, Россия</span>
                     </a>
-                    <a href="" class="contacts__block">
+                    <a href="tel:+7 (812) 389-45-45" class="contacts__block">
                         <span class="contacts__icon">
                             <img src="img/contacts/c2.svg" alt="">
                         </span>
-                        <span class="contacts__link">+7 (495) 280-73-78</span>
+                        <span class="contacts__link">+7 (812) 389-45-45</span>
                     </a>
-                    <a href="" class="contacts__block">
+                    <a href="mailto:sales@gkvertikal.ru" class="contacts__block">
                         <span class="contacts__icon">
                             <img src="img/contacts/c3.svg" alt="">
                         </span>
-                        <span class="contacts__link">officerus@sunward.cc</span>
+                        <span class="contacts__link">sales@gkvertikal.ru</span>
                     </a>
                     <a href="" class="contacts__block">
                         <span class="contacts__icon">
                             <img src="img/contacts/c4.svg" alt="">
                         </span>
-                        <span class="contacts__link">sunwardgroup.ru</span>
+                        <span class="contacts__link">gkvertikal.ru</span>
+                    </a>
+                </div>
+                <div class="dillers__block">
+                    <div class="dillers__name">ООО «ТЕХНОГАРАНТ»</div>
+                    <a href="" class="contacts__block">
+                        <span class="contacts__icon">
+                            <img src="img/contacts/c1.svg" alt="">
+                        </span>
+                        <span class="contacts__link">Московское ш., 42, корп. 2, <br>
+                            Санкт-Петербург, Россия</span>
+                    </a>
+                    <a href="tel:+7 (812) 389-45-45" class="contacts__block">
+                        <span class="contacts__icon">
+                            <img src="img/contacts/c2.svg" alt="">
+                        </span>
+                        <span class="contacts__link">+7 (812) 389-45-45</span>
+                    </a>
+                    <a href="mailto:sales@gkvertikal.ru" class="contacts__block">
+                        <span class="contacts__icon">
+                            <img src="img/contacts/c3.svg" alt="">
+                        </span>
+                        <span class="contacts__link">sales@gkvertikal.ru</span>
                     </a>
                     <a href="" class="contacts__block">
                         <span class="contacts__icon">
-                            <img src="img/contacts/c5.svg" alt="">
+                            <img src="img/contacts/c4.svg" alt="">
                         </span>
-                        <span class="contacts__link">Адрес склада и тест-драйва: <br>
-                            г. Москва, Ленинградское шоссе, д.261, <br>
-                            строение 6.</span>
+                        <span class="contacts__link">gkvertikal.ru</span>
                     </a>
                 </div>
-                <div class="contacts__right">
-                    <h2 class="contacts__title">Напишите нам</h2>
-                    <p class="contacts__text">Здесь вы можете оставить свои комментарии и&nbsp;предложения,
-                        мы&nbsp;своевременно
-                        на&nbsp;них&nbsp;ответим</p>
-                    <form action="" class="contacts__form">
-                        <input type="text" placeholder="Ваше имя*" required>
-                        <input type="email" placeholder="Адрес электронной почты*" required>
-                        <div class="select ">
-                            <select name="" id="" onclick="selectChange(this);" onblur="selectBlur(this);">
-                                <option value="0">Интересующая техника*</option>
-                                <option value="1">Техника для строительства фундаментов</option>
-                                <option value="2">Буровые и дробильные устрановки</option>
-                                <option value="2">Экскаваторы</option>
-                                <option value="2">Краны</option>
-                                <option value="2">Карьерные самосвалы</option>
-                                <option value="2">Погрузчики с бортовым поворотом</option>
-                                <option value="2">Фронтальные погрузчики</option>
-                                <option value="2">Телескопические погрузчики</option>
-                                <option value="2">Самоходные ножничные подъемники</option>
-                                <option value="2">Бульдозеры</option>
-                            </select>
-                        </div>
-                        <input type="text" placeholder="Из какого Вы города?*" required>
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Введите сообщение*"></textarea>
-                        <div class="contacts__bottom">
-                            <label class="check">
-                                <input type="checkbox" name="" id="" checked required>
-                                <span></span>
-                                <p>Даю согласие на обработку персональных данных</p>
-                            </label>
-                            <button class="btn">
-                                Отправить заявку
-                                <img src="img/arrow.svg" alt="">
-                            </button>
-                        </div>
-                    </form>
+                <div class="dillers__block">
+                    <div class="dillers__name">ООО «ВЕРТИКАЛЬ МСК»</div>
+                    <a href="" class="contacts__block">
+                        <span class="contacts__icon">
+                            <img src="img/contacts/c1.svg" alt="">
+                        </span>
+                        <span class="contacts__link">Московское ш., 42, корп. 2, <br>
+                            Санкт-Петербург, Россия</span>
+                    </a>
+                    <a href="tel:+7 (812) 389-45-45" class="contacts__block">
+                        <span class="contacts__icon">
+                            <img src="img/contacts/c2.svg" alt="">
+                        </span>
+                        <span class="contacts__link">+7 (812) 389-45-45</span>
+                    </a>
+                    <a href="mailto:sales@gkvertikal.ru" class="contacts__block">
+                        <span class="contacts__icon">
+                            <img src="img/contacts/c3.svg" alt="">
+                        </span>
+                        <span class="contacts__link">sales@gkvertikal.ru</span>
+                    </a>
+                    <a href="" class="contacts__block">
+                        <span class="contacts__icon">
+                            <img src="img/contacts/c4.svg" alt="">
+                        </span>
+                        <span class="contacts__link">gkvertikal.ru</span>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
-    <div id="map" class="contacts__map"></div>
+    <div id="map" class="dillers__map"></div>
     <footer class="footer">
         <div class="footer-mob">
             <div class="container">
@@ -286,7 +334,8 @@
                         представлена
                         на&nbsp;основе реального оборудования. В&nbsp;целях постоянной работы по техническому
                         совершенствованию
-                        продукции, удовлетворяющей спрос покупателей и&nbsp;соответствующие законные требования государства,
+                        продукции, удовлетворяющей спрос покупателей и&nbsp;соответствующие законные требования
+                        государства,
                         Sunward Intelligent Equipment Group имеет право вносить изменения
                         в&nbsp;спецификацию вышеуказанной продукции
                         без&nbsp;отдельного уведомления.</p>
@@ -453,7 +502,7 @@
                 var mapOptions = {
                     // How zoomed in you want the map to start at (always required)
 
-                    zoom: 11,
+                    zoom: 4,
                     zoomControl: false,
                     // scaleControl: false,
                     streetViewControl: false,
@@ -565,11 +614,22 @@
                     scaledSize: new google.maps.Size(64, 64)
                 }
             });
+            var marker2 = new google.maps.Marker({
+                position: new google.maps.LatLng(59.938955, 30.315644),
+                map: map,
+                title: 'SunWard',
+                icon: {
+                    url: "img/map.svg",
+                    scaledSize: new google.maps.Size(64, 64)
+                }
+            });
 
         }
     </script>
-    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
-        integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="js/jquery.scrollme.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="js/main.js"></script>
 </body>
 

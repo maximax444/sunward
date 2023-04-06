@@ -1,0 +1,97 @@
+.dillers
+    padding-top: 100px
+    padding-bottom: 50px
+    &__title
+        margin: 0
+        font-size: 46px
+        line-height: 52px
+        margin-bottom: 55px
+    &__block
+        background: #F8F8F8
+        border: 1px solid #ECECEC
+        border-radius: 4px
+        padding: 36px 32px
+        padding-bottom: 5px
+    &__wrap
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-gap: 13px
+    &__name
+        font-size: 23px
+        line-height: 28px
+        margin-bottom: 24px
+        font-weight: 700
+    &__form
+        display: flex
+        justify-content: space-between
+        align-items: flex-end
+        grid-gap: 42px
+        margin-bottom: 80px
+    &__btn
+        width: 285px
+        padding-left: 10px
+        padding-right: 10px
+        &:hover
+            grid-gap: 18px
+    &__select
+        width: 475px
+        span
+            display: block
+            margin-bottom: 28px
+            font-weight: 700
+            font-size: 23px
+            line-height: 28px
+    &__map
+        height: 720px
+        .gmnoprint
+            display: none
+@media(max-width: 1199px)
+    .dillers
+        &__block
+            padding: 30px 20px
+            padding-bottom: 0
+@media(max-width: 991px)
+    .dillers
+        &__wrap
+            grid-template-columns: repeat(2, 1fr)
+        &__block
+            padding: 36px 32px
+            padding-bottom: 5px
+        &__form
+            flex-direction: column
+            align-items: flex-start
+@media(max-width: 767px)
+    .dillers
+        &__wrap
+            grid-template-columns: repeat(1, 1fr)
+@media(max-width: 575px)
+    .dillers
+        padding-top: 40px
+        padding-bottom: 30px
+        &__title
+            font-size: 32px
+            line-height: 36px
+            margin-bottom: 32px
+        &__select
+            width: 100%
+            span
+                font-size: 20px
+                line-height: 24px
+                margin-bottom: 15px
+        &__form
+            grid-gap: 30px
+            border-bottom: 1px solid #ECECEC
+            padding-bottom: 35px
+            margin-bottom: 35px
+            button
+                width: 100%
+        &__block
+            padding: 20px 23px
+            padding-bottom: 5px
+            .contacts__block
+                margin-bottom: 16px
+        &__name
+            font-size: 20px
+            line-height: 24px
+        &__map
+            height: 530px
