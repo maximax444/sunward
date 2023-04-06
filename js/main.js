@@ -22,15 +22,26 @@ $('.header__search-top').on('click', function (e) {
 });
 $('.header__world, .header__pred').on('click', function (e) {
     e.preventDefault();
-    $('.countries').toggleClass('active');
+
     $(this).toggleClass('active');
     if ($(this).hasClass('active')) {
+        $('.countries').slideDown();
         $('body').css('overflow', 'hidden');
     } else {
+        $('.countries').slideUp();
         $('body').css('overflow', 'visible');
     }
 });
-
+if (window.innerWidth > 991) {
+    $('.header__menu>li').on("mouseenter", function (e) {
+        $(this).find('ul').stop();
+        $(this).find('ul').slideDown();
+    });
+    $('.header__menu>li').on("mouseleave", function (e) {
+        $(this).find('ul').stop();
+        $(this).find('ul').slideUp();
+    });
+}
 $(document).mouseup(function (e) {
     var container = $(".header__search");
     if (container.has(e.target).length === 0) {
@@ -49,6 +60,7 @@ $('.header__burg').on('click', function (e) {
     if ($(this).hasClass('active')) {
         $('html, body').css('overflow', 'hidden');
     } else {
+        $('.countries').slideUp();
         $('html, body').css('overflow', 'visible');
         $('.countries').removeClass('active');
     }
@@ -95,6 +107,11 @@ $('.card-mob > .tab').on('click', function (e) {
     e.preventDefault();
     $(this).toggleClass('active');
     $(this).next('.card-mob__block').toggleClass('active');
+});
+$('.home-catalog  .news__more').on('click', function (e) {
+    e.preventDefault();
+    $(this).hide();
+    $('.home-catalog__block').css('display', 'block');
 });
 $('.card-mob__tabs > a').on('click', function (e) {
     e.preventDefault();
@@ -162,10 +179,6 @@ $(document).ready(function () {
         swiper2.slideNext();
         swiper2.slidePrev();
     }
-    if ($(swiper3.el).length) {
-        swiper3.slideNext();
-        swiper3.slidePrev();
-    }
     if ($(swiper4.el).length) {
         swiper4.slideNext();
         swiper4.slidePrev();
@@ -196,7 +209,7 @@ const swiper2 = new Swiper('.home-catalog .swiper', {
         },
         // when window width is >= 640px
         992: {
-            slidesPerView: 2,
+            slidesPerView: 3,
             spaceBetween: 14
         },
         // when window width is >= 640px
@@ -229,7 +242,13 @@ const swiper3 = new Swiper('.main .swiper', {
 
     slidesPerView: 1,
     spaceBetween: 0,
-    loop: false,
+    autoplay: {
+        delay: 3000,
+    },
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true
+    },
     // Navigation arrows
     navigation: {
         nextEl: '.main__next',
