@@ -55,15 +55,9 @@ $(document).mouseup(function (e) {
 });
 $('.header__burg').on('click', function (e) {
     e.preventDefault();
-    window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: 'smooth'
-    });
     $(this).toggleClass('active');
     $('.menu').toggleClass('active');
     if ($(this).hasClass('active')) {
-        $('html, body').css('overflow', 'hidden');
     } else {
         $('.countries').slideUp();
         $('html, body').css('overflow', 'visible');
