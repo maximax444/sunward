@@ -127,6 +127,11 @@ const swiper = new Swiper('.home-news .swiper', {
         nextEl: '.home-news__next',
         prevEl: '.home-news__prev',
     },
+
+    pagination: {
+        el: '.home-news__navig',
+        clickable: true
+    },
     breakpoints: {
         // when window width is >= 320px
         320: {
@@ -150,25 +155,6 @@ const swiper = new Swiper('.home-news .swiper', {
         }
     }
 });
-swiper.on("slideChange afterInit init", function () {
-    let currentSlide = this.activeIndex + 1;
-    var curr;
-    var all;
-    if (this.slides.length - 2 < 10) {
-        all = '0' + (this.slides.length - 2);
-    } else {
-        all = this.slides.length - 2;
-    }
-    if (currentSlide < 10) {
-        curr = '0' + currentSlide;
-    } else {
-        curr = currentSlide;
-    }
-    $('.home-news .pages__curr').html(curr);
-    $('.home-news .pages__all span').html(all);
-
-
-});
 $(document).ready(function () {
     if ($(swiper.el).length) {
         swiper.slideNext();
@@ -190,6 +176,10 @@ const swiper2 = new Swiper('.home-catalog .swiper', {
     spaceBetween: 14,
     slidesPerGroup: 3,
     loop: false,
+    pagination: {
+        el: '.home-catalog__navig',
+        clickable: true
+    },
     // Navigation arrows
     navigation: {
         nextEl: '.home-catalog__next',
@@ -242,11 +232,15 @@ const swiper3 = new Swiper('.main .swiper', {
     slidesPerView: 1,
     spaceBetween: 0,
     autoplay: {
-        delay: 3000,
+        delay: 5000,
     },
     effect: 'fade',
     fadeEffect: {
         crossFade: true
+    },
+    pagination: {
+        el: '.main__navig',
+        clickable: true
     },
     // Navigation arrows
     navigation: {
@@ -254,31 +248,9 @@ const swiper3 = new Swiper('.main .swiper', {
         prevEl: '.main__prev',
     }
 });
-swiper3.on("slideChange afterInit init", function () {
-    let currentSlide = this.activeIndex + 1;
-    var curr;
-    var all;
-    if (this.slides.length < 10) {
-        all = '0' + (this.slides.length);
-    } else {
-        all = this.slides.length;
-    }
-    if (currentSlide < 10) {
-        curr = '0' + currentSlide;
-    } else {
-        curr = currentSlide;
-    }
-    $('.main .pages__curr').html(curr);
-    $('.main .pages__all span').html(all);
-
-
-});
 const swiper4 = new Swiper('.about-gal .swiper', {
 
     slidesPerView: 3,
-    grid: {
-        rows: 2,
-    },
     slidesPerGroup: 3,
     spaceBetween: 13,
     loop: false,
@@ -287,54 +259,30 @@ const swiper4 = new Swiper('.about-gal .swiper', {
         nextEl: '.about-gal__next',
         prevEl: '.about-gal__prev',
     },
+    pagination: {
+        el: '.about-gal__navig',
+        clickable: true
+    },
     breakpoints: {
         // when window width is >= 320px
         320: {
             slidesPerView: 1,
-            grid: {
-                rows: 1,
-            },
             slidesPerGroup: 1,
             spaceBetween: 13,
         },
         // when window width is >= 480px
         768: {
             slidesPerView: 2,
-            grid: {
-                rows: 2,
-            },
             slidesPerGroup: 2,
             spaceBetween: 13,
         },
         // when window width is >= 640px
         992: {
             slidesPerView: 3,
-            grid: {
-                rows: 2,
-            },
             slidesPerGroup: 3,
             spaceBetween: 13
         }
     }
-});
-swiper4.on("slideChange afterInit init", function () {
-    let currentSlide = this.activeIndex + 1;
-    var curr;
-    var all;
-    if (Math.round(this.slides.length / 3) < 10) {
-        all = '0' + Math.round(this.slides.length / 3);
-    } else {
-        all = Math.round(this.slides.length / 3);
-    }
-    if (currentSlide < 10) {
-        curr = '0' + currentSlide;
-    } else {
-        curr = currentSlide;
-    }
-    $('.about-gal .pages__curr').html(curr);
-    $('.about-gal .pages__all span').html(all);
-
-
 });
 (function () {
 

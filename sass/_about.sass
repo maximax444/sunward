@@ -5,12 +5,12 @@
         padding-bottom: 95px
         &__title
             font-weight: 700
-            font-size: 46px
+            font-size: 40px
             line-height: 54px
             margin-bottom: 22px
             margin-top: 0
         &__text
-            font-size: 18px
+            font-size: 19px
             line-height: 24px
             margin-top: 0
             margin-bottom: 55px
@@ -32,12 +32,12 @@
             margin-bottom: 22px
         &__name
             font-weight: 600
-            font-size: 18px
+            font-size: 19px
             line-height: 24px
             text-align: center
     &__title
         font-weight: 700
-        font-size: 46px
+        font-size: 40px
         line-height: 54px
         margin-top: 0
         margin-bottom: 22px
@@ -47,7 +47,7 @@
         background: #F8F8F8
         &__title
             font-weight: 700
-            font-size: 46px
+            font-size: 40px
             line-height: 54px
             margin-top: 0
             margin-bottom: 22px
@@ -58,7 +58,7 @@
             margin-top: 0
             margin-bottom: 20px
         &__text
-            font-size: 18px
+            font-size: 19px
             line-height: 24px
             margin: 0
         &__wrap
@@ -70,9 +70,10 @@
             img
                 width: 100%
         &__cont
-            width: 480px
+            width: 490px
     &-history
         padding: 100px 0
+        overflow: hidden
         &__wrap
             display: flex
             justify-content: space-between
@@ -96,7 +97,7 @@
         &__text
             margin: 0
             margin-bottom: 60px
-            font-size: 18px
+            font-size: 19px
             line-height: 24px
         &__feat
             display: flex
@@ -112,7 +113,7 @@
             background: #F8F8F8
             border-radius: 4px
         &__num
-            font-size: 18px
+            font-size: 19px
             line-height: 22px
             span
                 display: block
@@ -123,6 +124,8 @@
         &__cont
             width: 660px
     &-now
+        .about__title
+            margin-bottom: 0
         &__wrap
             display: flex
             justify-content: space-between
@@ -145,7 +148,7 @@
             line-height: 28px
         &__text
             p
-                font-size: 18px
+                font-size: 19px
                 line-height: 24px
                 margin: 0
             .about-now__img
@@ -161,7 +164,7 @@
             span
                 width: calc(100% - 61px)
                 font-weight: 600
-                font-size: 16px
+                font-size: 17px
                 line-height: 22px
     &-place
         padding-top: 140px
@@ -181,7 +184,7 @@
             .about-place__img
                 display: none
         &__text
-            font-size: 18px
+            font-size: 19px
             line-height: 24px
             b
                 font-weight: 600
@@ -204,7 +207,7 @@
             line-height: 28px
             margin-bottom: 4px
         &__descr
-            font-size: 18px
+            font-size: 19px
             line-height: 22px
     &-sun
         padding-top: 100px
@@ -275,7 +278,7 @@
             margin: 0
             margin-bottom: 33px
             font-weight: 700
-            font-size: 60px
+            font-size: 54px
             line-height: 54px
             color: #FFFFFF
         &__descr
@@ -297,8 +300,19 @@
             &:hover
                 grid-gap: 18px
     &-gal
+        overflow: hidden
         padding-top: 110px
         padding-bottom: 120px
+        .container
+            position: relative
+        &__prev
+            position: absolute
+            top: 270px
+            left: -50px
+        &__next
+            position: absolute
+            top: 270px
+            right: -50px
         &__top
             display: flex
             align-items: center
@@ -311,13 +325,15 @@
                 height: 100%
                 border-radius: 4px
         .swiper
-            height: 675px
             &+.about-gal__top
                 display: none
 @media(max-width: 1349px)
     .about
         &-feat__block
             padding: 30px 25px
+        &-miss
+            &__logo
+                width: 600px
         &-place
             &__img
                 display: none
@@ -407,9 +423,10 @@
             padding-top: 40px
             padding-bottom: 50px
             &__wrap
-                grid-gap: 42px
+                grid-gap: 0px
             &__logo
                 width: 100%
+                margin-bottom: 40px
                 img
                     width: 100%
             &__cont
@@ -423,7 +440,7 @@
                 line-height: 24px
                 margin-bottom: 17px
             &__text
-                font-size: 16px
+                font-size: 17px
                 line-height: 20px
                 br
                     display: none
@@ -438,7 +455,7 @@
                 img
                     width: 100%
             &__text
-                font-size: 16px
+                font-size: 17px
                 line-height: 20px
                 margin-bottom: 42px
             &__feat
@@ -453,7 +470,7 @@
                     max-width: 59px
                     max-height: 59px
             &__num
-                font-size: 16px
+                font-size: 17px
                 line-height: 20px
                 span
                     font-size: 20px
@@ -466,7 +483,7 @@
                 margin-bottom: 17px
             &__text
                 p
-                    font-size: 16px
+                    font-size: 17px
                     line-height: 20px
         &-place
             padding-top: 50px
@@ -499,7 +516,7 @@
                 line-height: 24px
                 margin-bottom: 10px
             &__descr
-                font-size: 16px
+                font-size: 17px
                 line-height: 20px
         &-inn
             padding-top: 54px
@@ -511,7 +528,7 @@
                 line-height: 36px
                 margin-bottom: 14px
             &__text
-                font-size: 16px
+                font-size: 17px
                 line-height: 20px
                 margin-bottom: 34px
             &__img
@@ -525,7 +542,7 @@
                 width: 50%
                 padding: 0 5px
             &__name
-                font-size: 18px
+                font-size: 19px
                 line-height: 24px
                 height: 44px
         &-sun
@@ -543,7 +560,7 @@
                 height: auto
         &-place
             &__text
-                font-size: 16px
+                font-size: 17px
                 line-height: 20px
                 p
                     margin-top: 0
@@ -558,7 +575,7 @@
                 width: 100%
                 padding: 0 20px
             &__descr
-                font-size: 16px
+                font-size: 17px
                 line-height: 20px
                 max-width: 230px
                 margin: 0 auto
@@ -587,6 +604,9 @@
                 justify-content: space-between
                 position: relative
                 z-index: 3
+                .about-gal
+                    &__prev, &__next
+                        display: flex
             .pages
                 text-align: center
                 width: 100%
@@ -594,3 +614,7 @@
                 position: absolute
                 top: 0
                 left: 0
+                display: none
+            &__prev, &__next
+                display: none
+                position: static
